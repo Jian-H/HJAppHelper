@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "HJAppHelpers.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSString * md5HJ = [HJAppHelpers md5HexDigest:@"黄健"];
+    NSLog(@"md5HJ : %@",md5HJ);
+    
+    NSData * data = [@"黄健" dataUsingEncoding:NSUTF8StringEncoding];
+    
+    //加密
+    NSData * encryptData = [HJAppHelpers AES256EncryptWithKey:@"hj" value:data];
+    NSString * enStr = [[NSString alloc] initWithData:encryptData encoding:NSUTF8StringEncoding];
+     NSLog(@"enStr : %@",enStr);
+    //解密
+    NSData * decData = [HJAppHelpers AES256DecryptWithKey:@"hj" value:encryptData];
+    NSString * decStr = [[NSString alloc] initWithData:decData encoding:NSUTF8StringEncoding];
+    NSLog(@"decStr : %@",decStr);
+    
     return YES;
 }
 

@@ -15,6 +15,10 @@
 		26172F5C1BD7E99500D7A91F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26172F5A1BD7E99500D7A91F /* LaunchScreen.storyboard */; };
 		26172F671BD7E99500D7A91F /* HJAppHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172F661BD7E99500D7A91F /* HJAppHelperTests.m */; };
 		26172F721BD7E99500D7A91F /* HJAppHelperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172F711BD7E99500D7A91F /* HJAppHelperUITests.m */; };
+		26172F821BD7EB0100D7A91F /* HJAppHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172F811BD7EB0100D7A91F /* HJAppHelpers.m */; settings = {ASSET_TAGS = (); }; };
+		26172F861BD7F72C00D7A91F /* HJEncryptHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172F851BD7F72C00D7A91F /* HJEncryptHelpers.m */; settings = {ASSET_TAGS = (); }; };
+		26172F8B1BD7F76900D7A91F /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172F881BD7F76900D7A91F /* GTMBase64.m */; settings = {ASSET_TAGS = (); }; };
+		26172F8C1BD7F76900D7A91F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 26172F8A1BD7F76900D7A91F /* README.md */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		26172F6D1BD7E99500D7A91F /* HJAppHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HJAppHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26172F711BD7E99500D7A91F /* HJAppHelperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJAppHelperUITests.m; sourceTree = "<group>"; };
 		26172F731BD7E99500D7A91F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26172F801BD7EB0100D7A91F /* HJAppHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJAppHelpers.h; sourceTree = "<group>"; };
+		26172F811BD7EB0100D7A91F /* HJAppHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJAppHelpers.m; sourceTree = "<group>"; };
+		26172F841BD7F72C00D7A91F /* HJEncryptHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJEncryptHelpers.h; sourceTree = "<group>"; };
+		26172F851BD7F72C00D7A91F /* HJEncryptHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJEncryptHelpers.m; sourceTree = "<group>"; };
+		26172F871BD7F76900D7A91F /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		26172F881BD7F76900D7A91F /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		26172F891BD7F76900D7A91F /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		26172F8A1BD7F76900D7A91F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +117,9 @@
 				26172F501BD7E99500D7A91F /* AppDelegate.m */,
 				26172F521BD7E99500D7A91F /* ViewController.h */,
 				26172F531BD7E99500D7A91F /* ViewController.m */,
+				26172F831BD7F70300D7A91F /* 加密 */,
+				26172F801BD7EB0100D7A91F /* HJAppHelpers.h */,
+				26172F811BD7EB0100D7A91F /* HJAppHelpers.m */,
 				26172F551BD7E99500D7A91F /* Main.storyboard */,
 				26172F581BD7E99500D7A91F /* Assets.xcassets */,
 				26172F5A1BD7E99500D7A91F /* LaunchScreen.storyboard */,
@@ -138,6 +153,19 @@
 				26172F731BD7E99500D7A91F /* Info.plist */,
 			);
 			path = HJAppHelperUITests;
+			sourceTree = "<group>";
+		};
+		26172F831BD7F70300D7A91F /* 加密 */ = {
+			isa = PBXGroup;
+			children = (
+				26172F841BD7F72C00D7A91F /* HJEncryptHelpers.h */,
+				26172F851BD7F72C00D7A91F /* HJEncryptHelpers.m */,
+				26172F871BD7F76900D7A91F /* GTMBase64.h */,
+				26172F881BD7F76900D7A91F /* GTMBase64.m */,
+				26172F891BD7F76900D7A91F /* GTMDefines.h */,
+				26172F8A1BD7F76900D7A91F /* README.md */,
+			);
+			path = "加密";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +299,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				26172F541BD7E99500D7A91F /* ViewController.m in Sources */,
+				26172F8B1BD7F76900D7A91F /* GTMBase64.m in Sources */,
 				26172F511BD7E99500D7A91F /* AppDelegate.m in Sources */,
+				26172F8C1BD7F76900D7A91F /* README.md in Sources */,
 				26172F4E1BD7E99500D7A91F /* main.m in Sources */,
+				26172F861BD7F72C00D7A91F /* HJEncryptHelpers.m in Sources */,
+				26172F821BD7EB0100D7A91F /* HJAppHelpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HJAppHelper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hylapp.com.HJAppHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HJAppHelper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hylapp.com.HJAppHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
