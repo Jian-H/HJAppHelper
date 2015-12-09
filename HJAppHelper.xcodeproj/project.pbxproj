@@ -15,10 +15,12 @@
 		26172F5C1BD7E99500D7A91F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26172F5A1BD7E99500D7A91F /* LaunchScreen.storyboard */; };
 		26172F671BD7E99500D7A91F /* HJAppHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172F661BD7E99500D7A91F /* HJAppHelperTests.m */; };
 		26172F721BD7E99500D7A91F /* HJAppHelperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172F711BD7E99500D7A91F /* HJAppHelperUITests.m */; };
-		26172F821BD7EB0100D7A91F /* HJAppHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172F811BD7EB0100D7A91F /* HJAppHelpers.m */; settings = {ASSET_TAGS = (); }; };
-		26172F861BD7F72C00D7A91F /* HJEncryptHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172F851BD7F72C00D7A91F /* HJEncryptHelpers.m */; settings = {ASSET_TAGS = (); }; };
-		26172F8B1BD7F76900D7A91F /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172F881BD7F76900D7A91F /* GTMBase64.m */; settings = {ASSET_TAGS = (); }; };
-		26172F8C1BD7F76900D7A91F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 26172F8A1BD7F76900D7A91F /* README.md */; settings = {ASSET_TAGS = (); }; };
+		26172F821BD7EB0100D7A91F /* HJAppHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172F811BD7EB0100D7A91F /* HJAppHelpers.m */; };
+		2676C68C1C12C3260067EFE7 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2676C6871C12C3260067EFE7 /* GTMBase64.m */; };
+		2676C68D1C12C3260067EFE7 /* HJEncryptHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 2676C68A1C12C3260067EFE7 /* HJEncryptHelpers.m */; };
+		2676C68E1C12C3260067EFE7 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2676C68B1C12C3260067EFE7 /* README.md */; };
+		2676C6921C12C3B00067EFE7 /* HJDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2676C6911C12C3B00067EFE7 /* HJDownloadManager.m */; };
+		FEC9C755C829E0269D4B48CF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEEDA8D21669E4895627C66B /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EF1BC29963267328EEFECB3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		26172F491BD7E99500D7A91F /* HJAppHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJAppHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26172F4D1BD7E99500D7A91F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		26172F4F1BD7E99500D7A91F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -57,12 +60,16 @@
 		26172F731BD7E99500D7A91F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26172F801BD7EB0100D7A91F /* HJAppHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJAppHelpers.h; sourceTree = "<group>"; };
 		26172F811BD7EB0100D7A91F /* HJAppHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJAppHelpers.m; sourceTree = "<group>"; };
-		26172F841BD7F72C00D7A91F /* HJEncryptHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJEncryptHelpers.h; sourceTree = "<group>"; };
-		26172F851BD7F72C00D7A91F /* HJEncryptHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJEncryptHelpers.m; sourceTree = "<group>"; };
-		26172F871BD7F76900D7A91F /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
-		26172F881BD7F76900D7A91F /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
-		26172F891BD7F76900D7A91F /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
-		26172F8A1BD7F76900D7A91F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2676C6861C12C3260067EFE7 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		2676C6871C12C3260067EFE7 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		2676C6881C12C3260067EFE7 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		2676C6891C12C3260067EFE7 /* HJEncryptHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJEncryptHelpers.h; sourceTree = "<group>"; };
+		2676C68A1C12C3260067EFE7 /* HJEncryptHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJEncryptHelpers.m; sourceTree = "<group>"; };
+		2676C68B1C12C3260067EFE7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2676C6901C12C3B00067EFE7 /* HJDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJDownloadManager.h; sourceTree = "<group>"; };
+		2676C6911C12C3B00067EFE7 /* HJDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJDownloadManager.m; sourceTree = "<group>"; };
+		83504D7D9D89D4B01CFAAAB8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		EEEDA8D21669E4895627C66B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEC9C755C829E0269D4B48CF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +105,8 @@
 				26172F651BD7E99500D7A91F /* HJAppHelperTests */,
 				26172F701BD7E99500D7A91F /* HJAppHelperUITests */,
 				26172F4A1BD7E99500D7A91F /* Products */,
+				F75E919CD99A57DB3062D9B3 /* Pods */,
+				4AB6AA35E9002CB195E235D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,11 +123,11 @@
 		26172F4B1BD7E99500D7A91F /* HJAppHelper */ = {
 			isa = PBXGroup;
 			children = (
+				2676C6841C12C3260067EFE7 /* Project */,
 				26172F4F1BD7E99500D7A91F /* AppDelegate.h */,
 				26172F501BD7E99500D7A91F /* AppDelegate.m */,
 				26172F521BD7E99500D7A91F /* ViewController.h */,
 				26172F531BD7E99500D7A91F /* ViewController.m */,
-				26172F831BD7F70300D7A91F /* 加密 */,
 				26172F801BD7EB0100D7A91F /* HJAppHelpers.h */,
 				26172F811BD7EB0100D7A91F /* HJAppHelpers.m */,
 				26172F551BD7E99500D7A91F /* Main.storyboard */,
@@ -155,17 +165,52 @@
 			path = HJAppHelperUITests;
 			sourceTree = "<group>";
 		};
-		26172F831BD7F70300D7A91F /* 加密 */ = {
+		2676C6841C12C3260067EFE7 /* Project */ = {
 			isa = PBXGroup;
 			children = (
-				26172F841BD7F72C00D7A91F /* HJEncryptHelpers.h */,
-				26172F851BD7F72C00D7A91F /* HJEncryptHelpers.m */,
-				26172F871BD7F76900D7A91F /* GTMBase64.h */,
-				26172F881BD7F76900D7A91F /* GTMBase64.m */,
-				26172F891BD7F76900D7A91F /* GTMDefines.h */,
-				26172F8A1BD7F76900D7A91F /* README.md */,
+				2676C6851C12C3260067EFE7 /* 加密 */,
+				2676C68F1C12C3930067EFE7 /* 下载 */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		2676C6851C12C3260067EFE7 /* 加密 */ = {
+			isa = PBXGroup;
+			children = (
+				2676C6861C12C3260067EFE7 /* GTMBase64.h */,
+				2676C6871C12C3260067EFE7 /* GTMBase64.m */,
+				2676C6881C12C3260067EFE7 /* GTMDefines.h */,
+				2676C6891C12C3260067EFE7 /* HJEncryptHelpers.h */,
+				2676C68A1C12C3260067EFE7 /* HJEncryptHelpers.m */,
+				2676C68B1C12C3260067EFE7 /* README.md */,
 			);
 			path = "加密";
+			sourceTree = "<group>";
+		};
+		2676C68F1C12C3930067EFE7 /* 下载 */ = {
+			isa = PBXGroup;
+			children = (
+				2676C6901C12C3B00067EFE7 /* HJDownloadManager.h */,
+				2676C6911C12C3B00067EFE7 /* HJDownloadManager.m */,
+			);
+			path = "下载";
+			sourceTree = "<group>";
+		};
+		4AB6AA35E9002CB195E235D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEEDA8D21669E4895627C66B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F75E919CD99A57DB3062D9B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83504D7D9D89D4B01CFAAAB8 /* Pods.debug.xcconfig */,
+				0EF1BC29963267328EEFECB3 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,9 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26172F761BD7E99500D7A91F /* Build configuration list for PBXNativeTarget "HJAppHelper" */;
 			buildPhases = (
+				7CBA30F9012845B467888946 /* Check Pods Manifest.lock */,
 				26172F451BD7E99500D7A91F /* Sources */,
 				26172F461BD7E99500D7A91F /* Frameworks */,
 				26172F471BD7E99500D7A91F /* Resources */,
+				999F34CE5F51A8C7A0DE3BA0 /* Embed Pods Frameworks */,
+				F236FF27EAF4419D0FCFB3E3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -293,17 +341,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7CBA30F9012845B467888946 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		999F34CE5F51A8C7A0DE3BA0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F236FF27EAF4419D0FCFB3E3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		26172F451BD7E99500D7A91F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				26172F541BD7E99500D7A91F /* ViewController.m in Sources */,
-				26172F8B1BD7F76900D7A91F /* GTMBase64.m in Sources */,
 				26172F511BD7E99500D7A91F /* AppDelegate.m in Sources */,
-				26172F8C1BD7F76900D7A91F /* README.md in Sources */,
+				2676C68C1C12C3260067EFE7 /* GTMBase64.m in Sources */,
+				2676C6921C12C3B00067EFE7 /* HJDownloadManager.m in Sources */,
+				2676C68E1C12C3260067EFE7 /* README.md in Sources */,
+				2676C68D1C12C3260067EFE7 /* HJEncryptHelpers.m in Sources */,
 				26172F4E1BD7E99500D7A91F /* main.m in Sources */,
-				26172F861BD7F72C00D7A91F /* HJEncryptHelpers.m in Sources */,
 				26172F821BD7EB0100D7A91F /* HJAppHelpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,6 +540,7 @@
 		};
 		26172F771BD7E99500D7A91F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83504D7D9D89D4B01CFAAAB8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HJAppHelper/Info.plist;
@@ -455,6 +553,7 @@
 		};
 		26172F781BD7E99500D7A91F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EF1BC29963267328EEFECB3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HJAppHelper/Info.plist;
@@ -532,6 +631,7 @@
 				26172F781BD7E99500D7A91F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26172F791BD7E99500D7A91F /* Build configuration list for PBXNativeTarget "HJAppHelperTests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +640,7 @@
 				26172F7B1BD7E99500D7A91F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26172F7C1BD7E99500D7A91F /* Build configuration list for PBXNativeTarget "HJAppHelperUITests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +649,7 @@
 				26172F7E1BD7E99500D7A91F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

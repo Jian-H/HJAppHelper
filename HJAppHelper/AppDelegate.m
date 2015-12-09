@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "HJAppHelpers.h"
+#import "HJDownloadManager.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +20,18 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    //加密or解密
+    //[self encryptData];
+    
+    //下载图片
+    [self downloadImage];
+    
+    return YES;
+}
+
+#pragma mark - 加密or解密
+- (void)encryptData {
+
     NSString * md5HJ = [HJAppHelpers md5HexDigest:@"黄健"];
     NSLog(@"md5HJ : %@",md5HJ);
     
@@ -27,13 +40,27 @@
     //加密
     NSData * encryptData = [HJAppHelpers AES256EncryptWithKey:@"hj" value:data];
     NSString * enStr = [[NSString alloc] initWithData:encryptData encoding:NSUTF8StringEncoding];
-     NSLog(@"enStr : %@",enStr);
+    NSLog(@"enStr : %@",enStr);
     //解密
     NSData * decData = [HJAppHelpers AES256DecryptWithKey:@"hj" value:encryptData];
     NSString * decStr = [[NSString alloc] initWithData:decData encoding:NSUTF8StringEncoding];
     NSLog(@"decStr : %@",decStr);
+}
+
+#pragma mark - 下载图片
+- (void)downloadImage {
     
-    return YES;
+    NSString * url = @"http://test.file0.10000.com/2015/12/05/25b39c48e0ec45ec8174b5719129738c.JPG";
+    
+    [[HJDownloadManager sharedInstance] hj_downloadImageWithUrl:url
+                                                  progressBlock:^(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead) {
+                                                      
+                                                  } successBlock:^(UIImage *image) {
+                                                      
+                                                  } failureBlock:^(NSError *error) {
+                                                      
+                                                  }];
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
