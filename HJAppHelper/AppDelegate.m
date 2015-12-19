@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "HJAppHelpers.h"
 #import "HJDownloadManager.h"
+#import "HJAddressBookManager.h"
 
 @interface AppDelegate ()
 
@@ -24,7 +25,10 @@
     //[self encryptData];
     
     //下载图片
-    [self downloadImage];
+    //[self downloadImage];
+    
+    //获取通讯录
+    [self obtainAddressBook];
     
     return YES;
 }
@@ -61,6 +65,30 @@
                                                       
                                                   }];
     
+}
+
+//获取通讯录
+- (void)obtainAddressBook {
+
+    [[HJAddressBookManager sharedInstance] obtainAddressBookWithGetJurisdictionBlock:^(BOOL haveJurisdiction) {
+        
+        if (!haveJurisdiction) {
+            NSLog(@"没权限");
+        }
+        
+    } failBlock:^(BOOL fail) {
+        if (fail) {
+            NSLog(@"获取失败");
+        }
+    } haveNoPeopleBlock:^(BOOL haveNoPeople) {
+        if (haveNoPeople) {
+            NSLog(@"通讯录无人");
+        }
+    } finishedBlock:^(NSMutableArray *addressBooks) {
+       
+        NSLog(@"addressBook : %@",addressBooks);
+        
+    }];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

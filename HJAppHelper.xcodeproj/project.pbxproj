@@ -20,6 +20,10 @@
 		2676C68D1C12C3260067EFE7 /* HJEncryptHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 2676C68A1C12C3260067EFE7 /* HJEncryptHelpers.m */; };
 		2676C68E1C12C3260067EFE7 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2676C68B1C12C3260067EFE7 /* README.md */; };
 		2676C6921C12C3B00067EFE7 /* HJDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2676C6911C12C3B00067EFE7 /* HJDownloadManager.m */; };
+		26A5F32C1C239A02009F614D /* HJAddressBookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A5F32B1C239A02009F614D /* HJAddressBookManager.m */; };
+		26A5F32F1C239B5B009F614D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A5F32D1C239B5B009F614D /* AddressBook.framework */; };
+		26A5F3301C239B5B009F614D /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A5F32E1C239B5B009F614D /* AddressBookUI.framework */; };
+		26A5F3331C239C92009F614D /* HJAddressBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A5F3321C239C92009F614D /* HJAddressBookModel.m */; };
 		FEC9C755C829E0269D4B48CF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEEDA8D21669E4895627C66B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +72,12 @@
 		2676C68B1C12C3260067EFE7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2676C6901C12C3B00067EFE7 /* HJDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJDownloadManager.h; sourceTree = "<group>"; };
 		2676C6911C12C3B00067EFE7 /* HJDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJDownloadManager.m; sourceTree = "<group>"; };
+		26A5F32A1C239A02009F614D /* HJAddressBookManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJAddressBookManager.h; sourceTree = "<group>"; };
+		26A5F32B1C239A02009F614D /* HJAddressBookManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJAddressBookManager.m; sourceTree = "<group>"; };
+		26A5F32D1C239B5B009F614D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		26A5F32E1C239B5B009F614D /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		26A5F3311C239C92009F614D /* HJAddressBookModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJAddressBookModel.h; sourceTree = "<group>"; };
+		26A5F3321C239C92009F614D /* HJAddressBookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJAddressBookModel.m; sourceTree = "<group>"; };
 		83504D7D9D89D4B01CFAAAB8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EEEDA8D21669E4895627C66B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -77,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26A5F32F1C239B5B009F614D /* AddressBook.framework in Frameworks */,
+				26A5F3301C239B5B009F614D /* AddressBookUI.framework in Frameworks */,
 				FEC9C755C829E0269D4B48CF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,6 +180,7 @@
 		2676C6841C12C3260067EFE7 /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				26A5F3291C2397B9009F614D /* 通讯录 */,
 				2676C6851C12C3260067EFE7 /* 加密 */,
 				2676C68F1C12C3930067EFE7 /* 下载 */,
 			);
@@ -196,9 +209,22 @@
 			path = "下载";
 			sourceTree = "<group>";
 		};
+		26A5F3291C2397B9009F614D /* 通讯录 */ = {
+			isa = PBXGroup;
+			children = (
+				26A5F32A1C239A02009F614D /* HJAddressBookManager.h */,
+				26A5F32B1C239A02009F614D /* HJAddressBookManager.m */,
+				26A5F3311C239C92009F614D /* HJAddressBookModel.h */,
+				26A5F3321C239C92009F614D /* HJAddressBookModel.m */,
+			);
+			path = "通讯录";
+			sourceTree = "<group>";
+		};
 		4AB6AA35E9002CB195E235D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26A5F32D1C239B5B009F614D /* AddressBook.framework */,
+				26A5F32E1C239B5B009F614D /* AddressBookUI.framework */,
 				EEEDA8D21669E4895627C66B /* libPods.a */,
 			);
 			name = Frameworks;
@@ -395,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26172F541BD7E99500D7A91F /* ViewController.m in Sources */,
+				26A5F3331C239C92009F614D /* HJAddressBookModel.m in Sources */,
 				26172F511BD7E99500D7A91F /* AppDelegate.m in Sources */,
 				2676C68C1C12C3260067EFE7 /* GTMBase64.m in Sources */,
 				2676C6921C12C3B00067EFE7 /* HJDownloadManager.m in Sources */,
@@ -402,6 +429,7 @@
 				2676C68D1C12C3260067EFE7 /* HJEncryptHelpers.m in Sources */,
 				26172F4E1BD7E99500D7A91F /* main.m in Sources */,
 				26172F821BD7EB0100D7A91F /* HJAppHelpers.m in Sources */,
+				26A5F32C1C239A02009F614D /* HJAddressBookManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
