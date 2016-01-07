@@ -10,6 +10,7 @@
 #import "HJAppHelpers.h"
 #import "HJDownloadManager.h"
 #import "HJAddressBookManager.h"
+#import "HJDateTool.h"
 
 @interface AppDelegate ()
 
@@ -28,7 +29,10 @@
     //[self downloadImage];
     
     //获取通讯录
-    [self obtainAddressBook];
+    //[self obtainAddressBook];
+    
+    //时间戳转换成时间
+    [self calculateDate];
     
     return YES;
 }
@@ -89,6 +93,15 @@
         NSLog(@"addressBook : %@",addressBooks);
         
     }];
+}
+
+#pragma mark - 时间戳转换
+- (void)calculateDate {
+
+    NSString * dateStr = [HJDateTool calculateTimeWithDay:@"1451554971"];
+    
+    NSLog(@"date : %@",dateStr);
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

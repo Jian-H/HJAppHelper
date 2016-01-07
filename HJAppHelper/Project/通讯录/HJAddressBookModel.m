@@ -128,7 +128,7 @@
 - (instancetype)mutableCopyWithZone:(NSZone *)zone {
     
     HJAddressModel * result = [[self class] allocWithZone:zone];
-    result->_addressLabel       = [self.addressLabel copy];
+    result->_addressLabel       = [self.addressLabel mutableCopy];
     result->_country            = [self.country mutableCopy];
     result->_city               = [self.city mutableCopy];
     result->_state              = [self.state mutableCopy];

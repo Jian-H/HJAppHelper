@@ -16,6 +16,7 @@
 		26172F671BD7E99500D7A91F /* HJAppHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172F661BD7E99500D7A91F /* HJAppHelperTests.m */; };
 		26172F721BD7E99500D7A91F /* HJAppHelperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172F711BD7E99500D7A91F /* HJAppHelperUITests.m */; };
 		26172F821BD7EB0100D7A91F /* HJAppHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172F811BD7EB0100D7A91F /* HJAppHelpers.m */; };
+		2664A2D21C352D6D00C4FAD8 /* HJDateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2664A2D11C352D6D00C4FAD8 /* HJDateTool.m */; };
 		2676C68C1C12C3260067EFE7 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2676C6871C12C3260067EFE7 /* GTMBase64.m */; };
 		2676C68D1C12C3260067EFE7 /* HJEncryptHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 2676C68A1C12C3260067EFE7 /* HJEncryptHelpers.m */; };
 		2676C68E1C12C3260067EFE7 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2676C68B1C12C3260067EFE7 /* README.md */; };
@@ -64,6 +65,8 @@
 		26172F731BD7E99500D7A91F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26172F801BD7EB0100D7A91F /* HJAppHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJAppHelpers.h; sourceTree = "<group>"; };
 		26172F811BD7EB0100D7A91F /* HJAppHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJAppHelpers.m; sourceTree = "<group>"; };
+		2664A2D01C352D6D00C4FAD8 /* HJDateTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJDateTool.h; sourceTree = "<group>"; };
+		2664A2D11C352D6D00C4FAD8 /* HJDateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJDateTool.m; sourceTree = "<group>"; };
 		2676C6861C12C3260067EFE7 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		2676C6871C12C3260067EFE7 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 		2676C6881C12C3260067EFE7 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
@@ -177,9 +180,19 @@
 			path = HJAppHelperUITests;
 			sourceTree = "<group>";
 		};
+		2664A2CF1C352D4F00C4FAD8 /* HJDateTool */ = {
+			isa = PBXGroup;
+			children = (
+				2664A2D01C352D6D00C4FAD8 /* HJDateTool.h */,
+				2664A2D11C352D6D00C4FAD8 /* HJDateTool.m */,
+			);
+			path = HJDateTool;
+			sourceTree = "<group>";
+		};
 		2676C6841C12C3260067EFE7 /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				2664A2CF1C352D4F00C4FAD8 /* HJDateTool */,
 				26A5F3291C2397B9009F614D /* 通讯录 */,
 				2676C6851C12C3260067EFE7 /* 加密 */,
 				2676C68F1C12C3930067EFE7 /* 下载 */,
@@ -429,6 +442,7 @@
 				2676C68D1C12C3260067EFE7 /* HJEncryptHelpers.m in Sources */,
 				26172F4E1BD7E99500D7A91F /* main.m in Sources */,
 				26172F821BD7EB0100D7A91F /* HJAppHelpers.m in Sources */,
+				2664A2D21C352D6D00C4FAD8 /* HJDateTool.m in Sources */,
 				26A5F32C1C239A02009F614D /* HJAddressBookManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
