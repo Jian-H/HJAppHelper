@@ -11,6 +11,7 @@
 #import "HJDownloadManager.h"
 #import "HJAddressBookManager.h"
 #import "HJDateTool.h"
+#import "HJVerifyManager.h"
 
 @interface AppDelegate ()
 
@@ -32,7 +33,9 @@
     //[self obtainAddressBook];
     
     //时间戳转换成时间
-    [self calculateDate];
+    //[self calculateDate];
+    
+    [self verifyMobile:@"18970280703"];
     
     return YES;
 }
@@ -101,6 +104,17 @@
     NSString * dateStr = [HJDateTool calculateTimeWithDay:@"1451554971"];
     
     NSLog(@"date : %@",dateStr);
+    
+}
+
+#pragma mark - 手机验证
+- (void)verifyMobile:(NSString *)mobile {
+
+    if ([HJVerifyManager validatePhone:mobile]) {
+        NSLog(@"%@是个手机号码",mobile);
+    } else {
+        NSLog(@"No！No！No！");
+    }
     
 }
 
