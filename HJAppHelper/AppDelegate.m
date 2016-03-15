@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "HJAppHelpers.h"
-#import "HJDownloadManager.h"
 #import "HJAddressBookManager.h"
 #import "HJDateTool.h"
 #import "HJVerifyManager.h"
@@ -56,22 +55,6 @@
     NSData * decData = [HJAppHelpers AES256DecryptWithKey:@"hj" value:encryptData];
     NSString * decStr = [[NSString alloc] initWithData:decData encoding:NSUTF8StringEncoding];
     NSLog(@"decStr : %@",decStr);
-}
-
-#pragma mark - 下载图片
-- (void)downloadImage {
-    
-    NSString * url = @"http://test.file0.10000.com/2015/12/05/25b39c48e0ec45ec8174b5719129738c.JPG";
-    
-    [[HJDownloadManager sharedInstance] hj_downloadImageWithUrl:url
-                                                  progressBlock:^(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead) {
-                                                      
-                                                  } successBlock:^(UIImage *image) {
-                                                      
-                                                  } failureBlock:^(NSError *error) {
-                                                      
-                                                  }];
-    
 }
 
 //获取通讯录
