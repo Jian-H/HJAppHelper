@@ -58,6 +58,7 @@
 		260812E61C9062090079ABC8 /* UINavigationBar+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Addition.m"; sourceTree = "<group>"; };
 		260812E81C9062850079ABC8 /* UIImage+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utility.h"; sourceTree = "<group>"; };
 		260812E91C9062850079ABC8 /* UIImage+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utility.m"; sourceTree = "<group>"; };
+		2611ACD61CDCFB0F007E8744 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		26172F491BD7E99500D7A91F /* HJAppHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJAppHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26172F4D1BD7E99500D7A91F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		26172F4F1BD7E99500D7A91F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -162,6 +163,14 @@
 				260812E61C9062090079ABC8 /* UINavigationBar+Addition.m */,
 			);
 			path = UINavigationBar;
+			sourceTree = "<group>";
+		};
+		2611ACD51CDCFA74007E8744 /* 宏 */ = {
+			isa = PBXGroup;
+			children = (
+				2611ACD61CDCFB0F007E8744 /* PrefixHeader.pch */,
+			);
+			path = "宏";
 			sourceTree = "<group>";
 		};
 		26172F401BD7E99500D7A91F = {
@@ -270,6 +279,7 @@
 		26A634341C97E3A400924952 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				2611ACD51CDCFA74007E8744 /* 宏 */,
 				26A634561C97E3EA00924952 /* 网络状态判断 */,
 				26A634351C97E3A400924952 /* HJDateTool */,
 				26A6343B1C97E3A400924952 /* 加密 */,
@@ -638,6 +648,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -680,6 +691,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -699,6 +711,8 @@
 			baseConfigurationReference = 83504D7D9D89D4B01CFAAAB8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HJAppHelper/Project/Tools/宏/PrefixHeader.pch";
 				INFOPLIST_FILE = HJAppHelper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -712,6 +726,8 @@
 			baseConfigurationReference = 0EF1BC29963267328EEFECB3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HJAppHelper/Project/Tools/宏/PrefixHeader.pch";
 				INFOPLIST_FILE = HJAppHelper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
