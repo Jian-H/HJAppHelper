@@ -11,6 +11,7 @@
 #import "HJAddressBookManager.h"
 #import "HJDateTool.h"
 #import "HJVerifyManager.h"
+#import "NSDate+Utilities.h"
 
 @interface AppDelegate ()
 
@@ -34,7 +35,10 @@
     //时间戳转换成时间
     //[self calculateDate];
     
-    [self verifyMobile:@"18970280703"];
+    //[self verifyMobile:@"18970280703"];
+    
+    NSInteger week = [[NSDate date] week];
+    NSLog(@"week : %ld",(long)week);
     
     return YES;
 }

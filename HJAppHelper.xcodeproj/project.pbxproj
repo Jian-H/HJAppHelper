@@ -32,6 +32,8 @@
 		26A634541C97E3A400924952 /* HJAddressBookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A6344A1C97E3A400924952 /* HJAddressBookManager.m */; };
 		26A634551C97E3A400924952 /* HJAddressBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A6344C1C97E3A400924952 /* HJAddressBookModel.m */; };
 		26A634591C97E42000924952 /* HJNetWorkStateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A634581C97E42000924952 /* HJNetWorkStateHelper.m */; };
+		26C2F36A1CE0EBF500486989 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C2F3691CE0EBF500486989 /* NSDate+Utilities.m */; };
+		26C2F36D1CE0F71300486989 /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C2F36C1CE0F71300486989 /* NSDate+Helper.m */; };
 		FEC9C755C829E0269D4B48CF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEEDA8D21669E4895627C66B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +105,10 @@
 		26A6344C1C97E3A400924952 /* HJAddressBookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJAddressBookModel.m; sourceTree = "<group>"; };
 		26A634571C97E42000924952 /* HJNetWorkStateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJNetWorkStateHelper.h; sourceTree = "<group>"; };
 		26A634581C97E42000924952 /* HJNetWorkStateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJNetWorkStateHelper.m; sourceTree = "<group>"; };
+		26C2F3681CE0EBF500486989 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
+		26C2F3691CE0EBF500486989 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
+		26C2F36B1CE0F71300486989 /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helper.h"; sourceTree = "<group>"; };
+		26C2F36C1CE0F71300486989 /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
 		83504D7D9D89D4B01CFAAAB8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EEEDA8D21669E4895627C66B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -272,6 +278,10 @@
 			children = (
 				26A6342D1C979B7400924952 /* NSObject+ResolveTimestamp.h */,
 				26A6342E1C979B7400924952 /* NSObject+ResolveTimestamp.m */,
+				26C2F3681CE0EBF500486989 /* NSDate+Utilities.h */,
+				26C2F3691CE0EBF500486989 /* NSDate+Utilities.m */,
+				26C2F36B1CE0F71300486989 /* NSDate+Helper.h */,
+				26C2F36C1CE0F71300486989 /* NSDate+Helper.m */,
 			);
 			path = NSDate;
 			sourceTree = "<group>";
@@ -552,6 +562,7 @@
 			files = (
 				26172F541BD7E99500D7A91F /* ViewController.m in Sources */,
 				26172F511BD7E99500D7A91F /* AppDelegate.m in Sources */,
+				26C2F36A1CE0EBF500486989 /* NSDate+Utilities.m in Sources */,
 				260812E71C9062090079ABC8 /* UINavigationBar+Addition.m in Sources */,
 				26A6344D1C97E3A400924952 /* HJDateTool.m in Sources */,
 				26A634501C97E3A400924952 /* HJEncryptHelpers.m in Sources */,
@@ -565,6 +576,7 @@
 				26172F821BD7EB0100D7A91F /* HJAppHelpers.m in Sources */,
 				26A6342B1C979AAF00924952 /* NSMutableArray+SafeArray.m in Sources */,
 				26A6342F1C979B7400924952 /* NSObject+ResolveTimestamp.m in Sources */,
+				26C2F36D1CE0F71300486989 /* NSDate+Helper.m in Sources */,
 				26A634521C97E3A400924952 /* HJVerifyManager.m in Sources */,
 				26A634591C97E42000924952 /* HJNetWorkStateHelper.m in Sources */,
 				26A634531C97E3A400924952 /* HJImageColorTool.m in Sources */,
