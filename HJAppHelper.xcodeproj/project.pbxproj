@@ -18,6 +18,7 @@
 		26172F671BD7E99500D7A91F /* HJAppHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172F661BD7E99500D7A91F /* HJAppHelperTests.m */; };
 		26172F721BD7E99500D7A91F /* HJAppHelperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172F711BD7E99500D7A91F /* HJAppHelperUITests.m */; };
 		26172F821BD7EB0100D7A91F /* HJAppHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172F811BD7EB0100D7A91F /* HJAppHelpers.m */; };
+		2637BF851D21FA2E004C0AA9 /* HJPlainFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2637BF841D21FA2E004C0AA9 /* HJPlainFlowLayout.m */; };
 		265CF5BE1CEF3F79005338AD /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 265CF5BD1CEF3F79005338AD /* TTTAttributedLabel.m */; };
 		26A5F32F1C239B5B009F614D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A5F32D1C239B5B009F614D /* AddressBook.framework */; };
 		26A5F3301C239B5B009F614D /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A5F32E1C239B5B009F614D /* AddressBookUI.framework */; };
@@ -80,6 +81,8 @@
 		26172F731BD7E99500D7A91F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26172F801BD7EB0100D7A91F /* HJAppHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJAppHelpers.h; sourceTree = "<group>"; };
 		26172F811BD7EB0100D7A91F /* HJAppHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJAppHelpers.m; sourceTree = "<group>"; };
+		2637BF831D21FA2E004C0AA9 /* HJPlainFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPlainFlowLayout.h; sourceTree = "<group>"; };
+		2637BF841D21FA2E004C0AA9 /* HJPlainFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPlainFlowLayout.m; sourceTree = "<group>"; };
 		265CF5BC1CEF3F79005338AD /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
 		265CF5BD1CEF3F79005338AD /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
 		26A5F32D1C239B5B009F614D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
@@ -249,9 +252,27 @@
 			path = HJAppHelperUITests;
 			sourceTree = "<group>";
 		};
+		2637BF811D21F9C2004C0AA9 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				2637BF821D21F9EE004C0AA9 /* FlowLayout */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		2637BF821D21F9EE004C0AA9 /* FlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				2637BF831D21FA2E004C0AA9 /* HJPlainFlowLayout.h */,
+				2637BF841D21FA2E004C0AA9 /* HJPlainFlowLayout.m */,
+			);
+			path = FlowLayout;
+			sourceTree = "<group>";
+		};
 		265CF5B91CEF3ED1005338AD /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2637BF811D21F9C2004C0AA9 /* UICollectionView */,
 				265CF5BA1CEF3EF5005338AD /* UILabel */,
 			);
 			path = UI;
@@ -589,6 +610,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2637BF851D21FA2E004C0AA9 /* HJPlainFlowLayout.m in Sources */,
 				26172F541BD7E99500D7A91F /* ViewController.m in Sources */,
 				26172F511BD7E99500D7A91F /* AppDelegate.m in Sources */,
 				26C2F36A1CE0EBF500486989 /* NSDate+Utilities.m in Sources */,
