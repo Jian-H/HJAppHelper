@@ -36,6 +36,7 @@
 		26A634591C97E42000924952 /* HJNetWorkStateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A634581C97E42000924952 /* HJNetWorkStateHelper.m */; };
 		26C2F36A1CE0EBF500486989 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C2F3691CE0EBF500486989 /* NSDate+Utilities.m */; };
 		26C2F36D1CE0F71300486989 /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C2F36C1CE0F71300486989 /* NSDate+Helper.m */; };
+		A8163F821D938B8E004038E9 /* HJDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A8163F811D938B8E004038E9 /* HJDownloadManager.m */; };
 		FEC9C755C829E0269D4B48CF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEEDA8D21669E4895627C66B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -116,6 +117,8 @@
 		26C2F36B1CE0F71300486989 /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helper.h"; sourceTree = "<group>"; };
 		26C2F36C1CE0F71300486989 /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
 		83504D7D9D89D4B01CFAAAB8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		A8163F801D938B8E004038E9 /* HJDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJDownloadManager.h; sourceTree = "<group>"; };
+		A8163F811D938B8E004038E9 /* HJDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJDownloadManager.m; sourceTree = "<group>"; };
 		EEEDA8D21669E4895627C66B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -339,6 +342,7 @@
 		26A634341C97E3A400924952 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				A8163F7F1D938B8E004038E9 /* 下载 */,
 				2611ACD51CDCFA74007E8744 /* 宏 */,
 				26A634561C97E3EA00924952 /* 网络状态判断 */,
 				26A634351C97E3A400924952 /* HJDateTool */,
@@ -418,6 +422,15 @@
 				EEEDA8D21669E4895627C66B /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8163F7F1D938B8E004038E9 /* 下载 */ = {
+			isa = PBXGroup;
+			children = (
+				A8163F801D938B8E004038E9 /* HJDownloadManager.h */,
+				A8163F811D938B8E004038E9 /* HJDownloadManager.m */,
+			);
+			path = "下载";
 			sourceTree = "<group>";
 		};
 		F75E919CD99A57DB3062D9B3 /* Pods */ = {
@@ -630,6 +643,7 @@
 				26C2F36D1CE0F71300486989 /* NSDate+Helper.m in Sources */,
 				265CF5BE1CEF3F79005338AD /* TTTAttributedLabel.m in Sources */,
 				26A634521C97E3A400924952 /* HJVerifyManager.m in Sources */,
+				A8163F821D938B8E004038E9 /* HJDownloadManager.m in Sources */,
 				26A634591C97E42000924952 /* HJNetWorkStateHelper.m in Sources */,
 				26A634531C97E3A400924952 /* HJImageColorTool.m in Sources */,
 			);
