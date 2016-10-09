@@ -13,4 +13,9 @@
 #pragma mark - 图片矫正
 - (UIImage *)fixOrientation;
 
+/**
+ *  调整图片的大小
+ */
+- (UIImage*)transformWidth:(CGFloat)width height:(CGFloat)height;
+
 @end
