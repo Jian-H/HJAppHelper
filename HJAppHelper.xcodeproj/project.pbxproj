@@ -37,6 +37,7 @@
 		26C2F36A1CE0EBF500486989 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C2F3691CE0EBF500486989 /* NSDate+Utilities.m */; };
 		26C2F36D1CE0F71300486989 /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C2F36C1CE0F71300486989 /* NSDate+Helper.m */; };
 		A8163F821D938B8E004038E9 /* HJDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A8163F811D938B8E004038E9 /* HJDownloadManager.m */; };
+		A8C757C21DAA1201001BB31A /* HJFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C757C11DAA1201001BB31A /* HJFileManager.m */; };
 		FEC9C755C829E0269D4B48CF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEEDA8D21669E4895627C66B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -119,6 +120,8 @@
 		83504D7D9D89D4B01CFAAAB8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A8163F801D938B8E004038E9 /* HJDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJDownloadManager.h; sourceTree = "<group>"; };
 		A8163F811D938B8E004038E9 /* HJDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJDownloadManager.m; sourceTree = "<group>"; };
+		A8C757C01DAA1201001BB31A /* HJFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJFileManager.h; sourceTree = "<group>"; };
+		A8C757C11DAA1201001BB31A /* HJFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJFileManager.m; sourceTree = "<group>"; };
 		EEEDA8D21669E4895627C66B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -342,6 +345,7 @@
 		26A634341C97E3A400924952 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				A8C757BF1DAA11D4001BB31A /* 文件管理 */,
 				A8163F7F1D938B8E004038E9 /* 下载 */,
 				2611ACD51CDCFA74007E8744 /* 宏 */,
 				26A634561C97E3EA00924952 /* 网络状态判断 */,
@@ -433,6 +437,15 @@
 			path = "下载";
 			sourceTree = "<group>";
 		};
+		A8C757BF1DAA11D4001BB31A /* 文件管理 */ = {
+			isa = PBXGroup;
+			children = (
+				A8C757C01DAA1201001BB31A /* HJFileManager.h */,
+				A8C757C11DAA1201001BB31A /* HJFileManager.m */,
+			);
+			path = "文件管理";
+			sourceTree = "<group>";
+		};
 		F75E919CD99A57DB3062D9B3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -512,6 +525,7 @@
 				TargetAttributes = {
 					26172F481BD7E99500D7A91F = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = UH2N8K99U6;
 					};
 					26172F611BD7E99500D7A91F = {
 						CreatedOnToolsVersion = 7.0;
@@ -630,6 +644,7 @@
 				260812E71C9062090079ABC8 /* UINavigationBar+Addition.m in Sources */,
 				26A6344D1C97E3A400924952 /* HJDateTool.m in Sources */,
 				26A634501C97E3A400924952 /* HJEncryptHelpers.m in Sources */,
+				A8C757C21DAA1201001BB31A /* HJFileManager.m in Sources */,
 				26172F4E1BD7E99500D7A91F /* main.m in Sources */,
 				26A634241C9799C000924952 /* UITableView+Helper.m in Sources */,
 				26A6344F1C97E3A400924952 /* GTMBase64.m in Sources */,
@@ -789,6 +804,7 @@
 			baseConfigurationReference = 83504D7D9D89D4B01CFAAAB8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UH2N8K99U6;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HJAppHelper/Project/Tools/宏/PrefixHeader.pch";
 				INFOPLIST_FILE = HJAppHelper/Info.plist;
@@ -804,6 +820,7 @@
 			baseConfigurationReference = 0EF1BC29963267328EEFECB3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UH2N8K99U6;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HJAppHelper/Project/Tools/宏/PrefixHeader.pch";
 				INFOPLIST_FILE = HJAppHelper/Info.plist;
