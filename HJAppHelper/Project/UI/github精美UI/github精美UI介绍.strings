@@ -6,8 +6,10 @@
   Copyright © 2016年 huangjian. All rights reserved.
 */
 
-直接在github上搜索相关名称就可以找到对应Demo
+/*
+    直接在github上搜索相关名称就可以找到对应Demo
 
-序号    名称                 介绍
-1      YSCAnimation         该动画包括波纹，渐变色，波浪，心电图等等
-2      IQKeyboardManager    管理键盘的类
+    序号    名称                 介绍
+    1      YSCAnimation         该动画包括波纹，渐变色，波浪，心电图等等
+    2      IQKeyboardManager    管理键盘的类
+*/
