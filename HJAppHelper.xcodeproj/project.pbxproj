@@ -38,6 +38,7 @@
 		26C2F36D1CE0F71300486989 /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C2F36C1CE0F71300486989 /* NSDate+Helper.m */; };
 		32AD6F7F398252E0E6AF52BC /* libPods-HJAppHelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5131C19C64EB784DAB2839BB /* libPods-HJAppHelper.a */; };
 		A8163F821D938B8E004038E9 /* HJDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A8163F811D938B8E004038E9 /* HJDownloadManager.m */; };
+		A87B89221DDD540600F4DC22 /* HJGCDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A87B89211DDD540600F4DC22 /* HJGCDManager.m */; };
 		A89542551DBDE1DB006AA824 /* IosAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = A89542541DBDE1DB006AA824 /* IosAudioController.m */; };
 		A89BC1011DB0B16E0088660A /* XLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A89BC1001DB0B16E0088660A /* XLTextField.m */; };
 		A8C757C21DAA1201001BB31A /* HJFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C757C11DAA1201001BB31A /* HJFileManager.m */; };
@@ -122,6 +123,8 @@
 		5131C19C64EB784DAB2839BB /* libPods-HJAppHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HJAppHelper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8163F801D938B8E004038E9 /* HJDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJDownloadManager.h; sourceTree = "<group>"; };
 		A8163F811D938B8E004038E9 /* HJDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJDownloadManager.m; sourceTree = "<group>"; };
+		A87B89201DDD540600F4DC22 /* HJGCDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJGCDManager.h; sourceTree = "<group>"; };
+		A87B89211DDD540600F4DC22 /* HJGCDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJGCDManager.m; sourceTree = "<group>"; };
 		A89542531DBDE1DB006AA824 /* IosAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IosAudioController.h; sourceTree = "<group>"; };
 		A89542541DBDE1DB006AA824 /* IosAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IosAudioController.m; sourceTree = "<group>"; };
 		A89BC0FF1DB0B16E0088660A /* XLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTextField.h; sourceTree = "<group>"; };
@@ -355,6 +358,7 @@
 		26A634341C97E3A400924952 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				A87B891F1DDD53EA00F4DC22 /* GCD */,
 				A89542511DBDE1BB006AA824 /* 录音 */,
 				A8C757BF1DAA11D4001BB31A /* 文件管理 */,
 				A8163F7F1D938B8E004038E9 /* 下载 */,
@@ -455,6 +459,15 @@
 				A8163F811D938B8E004038E9 /* HJDownloadManager.m */,
 			);
 			path = "下载";
+			sourceTree = "<group>";
+		};
+		A87B891F1DDD53EA00F4DC22 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				A87B89201DDD540600F4DC22 /* HJGCDManager.h */,
+				A87B89211DDD540600F4DC22 /* HJGCDManager.m */,
+			);
+			path = GCD;
 			sourceTree = "<group>";
 		};
 		A89542511DBDE1BB006AA824 /* 录音 */ = {
@@ -708,6 +721,7 @@
 				A8163F821D938B8E004038E9 /* HJDownloadManager.m in Sources */,
 				26A634591C97E42000924952 /* HJNetWorkStateHelper.m in Sources */,
 				A89542551DBDE1DB006AA824 /* IosAudioController.m in Sources */,
+				A87B89221DDD540600F4DC22 /* HJGCDManager.m in Sources */,
 				26A634531C97E3A400924952 /* HJImageColorTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
