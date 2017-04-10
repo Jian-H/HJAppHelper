@@ -17,7 +17,6 @@
 		26172F5C1BD7E99500D7A91F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26172F5A1BD7E99500D7A91F /* LaunchScreen.storyboard */; };
 		26172F671BD7E99500D7A91F /* HJAppHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172F661BD7E99500D7A91F /* HJAppHelperTests.m */; };
 		26172F721BD7E99500D7A91F /* HJAppHelperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172F711BD7E99500D7A91F /* HJAppHelperUITests.m */; };
-		26172F821BD7EB0100D7A91F /* HJAppHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172F811BD7EB0100D7A91F /* HJAppHelpers.m */; };
 		2637BF851D21FA2E004C0AA9 /* HJPlainFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2637BF841D21FA2E004C0AA9 /* HJPlainFlowLayout.m */; };
 		265CF5BE1CEF3F79005338AD /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 265CF5BD1CEF3F79005338AD /* TTTAttributedLabel.m */; };
 		26A5F32F1C239B5B009F614D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A5F32D1C239B5B009F614D /* AddressBook.framework */; };
@@ -33,16 +32,19 @@
 		26A634531C97E3A400924952 /* HJImageColorTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A634471C97E3A400924952 /* HJImageColorTool.m */; };
 		26A634541C97E3A400924952 /* HJAddressBookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A6344A1C97E3A400924952 /* HJAddressBookManager.m */; };
 		26A634551C97E3A400924952 /* HJAddressBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A6344C1C97E3A400924952 /* HJAddressBookModel.m */; };
-		26A634591C97E42000924952 /* HJNetWorkStateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A634581C97E42000924952 /* HJNetWorkStateHelper.m */; };
 		26C2F36A1CE0EBF500486989 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C2F3691CE0EBF500486989 /* NSDate+Utilities.m */; };
 		26C2F36D1CE0F71300486989 /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C2F36C1CE0F71300486989 /* NSDate+Helper.m */; };
 		32AD6F7F398252E0E6AF52BC /* libPods-HJAppHelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5131C19C64EB784DAB2839BB /* libPods-HJAppHelper.a */; };
-		A8163F821D938B8E004038E9 /* HJDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A8163F811D938B8E004038E9 /* HJDownloadManager.m */; };
+		A81E09411E558C9100082D32 /* NSObject+RuntimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A81E09401E558C9100082D32 /* NSObject+RuntimeHelper.m */; };
 		A87B89221DDD540600F4DC22 /* HJGCDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A87B89211DDD540600F4DC22 /* HJGCDManager.m */; };
 		A89542551DBDE1DB006AA824 /* IosAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = A89542541DBDE1DB006AA824 /* IosAudioController.m */; };
 		A89BC1011DB0B16E0088660A /* XLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A89BC1001DB0B16E0088660A /* XLTextField.m */; };
 		A8C757C21DAA1201001BB31A /* HJFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C757C11DAA1201001BB31A /* HJFileManager.m */; };
 		A8C9BDC71DAA39AA007D8D71 /* github精美UI介绍.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8C9BDC61DAA39AA007D8D71 /* github精美UI介绍.strings */; };
+		A8E0E4881E9B869E00F16E7C /* HJDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E0E4841E9B869E00F16E7C /* HJDownloadManager.m */; };
+		A8E0E4891E9B869E00F16E7C /* HJNetWorkStateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E0E4871E9B869E00F16E7C /* HJNetWorkStateHelper.m */; };
+		A8E0E48F1E9B894C00F16E7C /* HJNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E0E48C1E9B894C00F16E7C /* HJNetworkCache.m */; };
+		A8E0E4901E9B894C00F16E7C /* HJNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E0E48E1E9B894C00F16E7C /* HJNetworkHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,8 +86,6 @@
 		26172F6D1BD7E99500D7A91F /* HJAppHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HJAppHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26172F711BD7E99500D7A91F /* HJAppHelperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJAppHelperUITests.m; sourceTree = "<group>"; };
 		26172F731BD7E99500D7A91F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		26172F801BD7EB0100D7A91F /* HJAppHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJAppHelpers.h; sourceTree = "<group>"; };
-		26172F811BD7EB0100D7A91F /* HJAppHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJAppHelpers.m; sourceTree = "<group>"; };
 		2637BF831D21FA2E004C0AA9 /* HJPlainFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPlainFlowLayout.h; sourceTree = "<group>"; };
 		2637BF841D21FA2E004C0AA9 /* HJPlainFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPlainFlowLayout.m; sourceTree = "<group>"; };
 		265CF5BC1CEF3F79005338AD /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
@@ -114,15 +114,13 @@
 		26A6344A1C97E3A400924952 /* HJAddressBookManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJAddressBookManager.m; sourceTree = "<group>"; };
 		26A6344B1C97E3A400924952 /* HJAddressBookModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJAddressBookModel.h; sourceTree = "<group>"; };
 		26A6344C1C97E3A400924952 /* HJAddressBookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJAddressBookModel.m; sourceTree = "<group>"; };
-		26A634571C97E42000924952 /* HJNetWorkStateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJNetWorkStateHelper.h; sourceTree = "<group>"; };
-		26A634581C97E42000924952 /* HJNetWorkStateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJNetWorkStateHelper.m; sourceTree = "<group>"; };
 		26C2F3681CE0EBF500486989 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
 		26C2F3691CE0EBF500486989 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
 		26C2F36B1CE0F71300486989 /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helper.h"; sourceTree = "<group>"; };
 		26C2F36C1CE0F71300486989 /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
 		5131C19C64EB784DAB2839BB /* libPods-HJAppHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HJAppHelper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8163F801D938B8E004038E9 /* HJDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJDownloadManager.h; sourceTree = "<group>"; };
-		A8163F811D938B8E004038E9 /* HJDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJDownloadManager.m; sourceTree = "<group>"; };
+		A81E093F1E558C9100082D32 /* NSObject+RuntimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RuntimeHelper.h"; sourceTree = "<group>"; };
+		A81E09401E558C9100082D32 /* NSObject+RuntimeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RuntimeHelper.m"; sourceTree = "<group>"; };
 		A87B89201DDD540600F4DC22 /* HJGCDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJGCDManager.h; sourceTree = "<group>"; };
 		A87B89211DDD540600F4DC22 /* HJGCDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJGCDManager.m; sourceTree = "<group>"; };
 		A89542531DBDE1DB006AA824 /* IosAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IosAudioController.h; sourceTree = "<group>"; };
@@ -132,6 +130,14 @@
 		A8C757C01DAA1201001BB31A /* HJFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJFileManager.h; sourceTree = "<group>"; };
 		A8C757C11DAA1201001BB31A /* HJFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJFileManager.m; sourceTree = "<group>"; };
 		A8C9BDC61DAA39AA007D8D71 /* github精美UI介绍.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = "github精美UI介绍.strings"; sourceTree = "<group>"; };
+		A8E0E4831E9B869E00F16E7C /* HJDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJDownloadManager.h; sourceTree = "<group>"; };
+		A8E0E4841E9B869E00F16E7C /* HJDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJDownloadManager.m; sourceTree = "<group>"; };
+		A8E0E4861E9B869E00F16E7C /* HJNetWorkStateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJNetWorkStateHelper.h; sourceTree = "<group>"; };
+		A8E0E4871E9B869E00F16E7C /* HJNetWorkStateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJNetWorkStateHelper.m; sourceTree = "<group>"; };
+		A8E0E48B1E9B894C00F16E7C /* HJNetworkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJNetworkCache.h; sourceTree = "<group>"; };
+		A8E0E48C1E9B894C00F16E7C /* HJNetworkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJNetworkCache.m; sourceTree = "<group>"; };
+		A8E0E48D1E9B894C00F16E7C /* HJNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJNetworkHelper.h; sourceTree = "<group>"; };
+		A8E0E48E1E9B894C00F16E7C /* HJNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJNetworkHelper.m; sourceTree = "<group>"; };
 		D939575020005725F17D2E0B /* Pods-HJAppHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJAppHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HJAppHelper/Pods-HJAppHelper.debug.xcconfig"; sourceTree = "<group>"; };
 		E1798CC2AD0C18B02025F4EF /* Pods-HJAppHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJAppHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-HJAppHelper/Pods-HJAppHelper.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -167,6 +173,7 @@
 		260812D41C905DCC0079ABC8 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				A81E093E1E558C4200082D32 /* Runtime */,
 				26A6342C1C979B4800924952 /* NSDate */,
 				26A634251C979A3D00924952 /* NSArray */,
 				26A634181C97988600924952 /* UITableview */,
@@ -232,8 +239,6 @@
 				26172F501BD7E99500D7A91F /* AppDelegate.m */,
 				26172F521BD7E99500D7A91F /* ViewController.h */,
 				26172F531BD7E99500D7A91F /* ViewController.m */,
-				26172F801BD7EB0100D7A91F /* HJAppHelpers.h */,
-				26172F811BD7EB0100D7A91F /* HJAppHelpers.m */,
 				26172F551BD7E99500D7A91F /* Main.storyboard */,
 				26172F581BD7E99500D7A91F /* Assets.xcassets */,
 				26172F5A1BD7E99500D7A91F /* LaunchScreen.storyboard */,
@@ -358,12 +363,11 @@
 		26A634341C97E3A400924952 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				A8E0E4811E9B869E00F16E7C /* 网络 */,
 				A87B891F1DDD53EA00F4DC22 /* GCD */,
 				A89542511DBDE1BB006AA824 /* 录音 */,
 				A8C757BF1DAA11D4001BB31A /* 文件管理 */,
-				A8163F7F1D938B8E004038E9 /* 下载 */,
 				2611ACD51CDCFA74007E8744 /* 宏 */,
-				26A634561C97E3EA00924952 /* 网络状态判断 */,
 				26A634351C97E3A400924952 /* HJDateTool */,
 				26A6343B1C97E3A400924952 /* 加密 */,
 				26A634421C97E3A400924952 /* 正则验证 */,
@@ -424,15 +428,6 @@
 			path = "通讯录";
 			sourceTree = "<group>";
 		};
-		26A634561C97E3EA00924952 /* 网络状态判断 */ = {
-			isa = PBXGroup;
-			children = (
-				26A634571C97E42000924952 /* HJNetWorkStateHelper.h */,
-				26A634581C97E42000924952 /* HJNetWorkStateHelper.m */,
-			);
-			path = "网络状态判断";
-			sourceTree = "<group>";
-		};
 		4AB6AA35E9002CB195E235D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -452,13 +447,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		A8163F7F1D938B8E004038E9 /* 下载 */ = {
+		A81E093E1E558C4200082D32 /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
-				A8163F801D938B8E004038E9 /* HJDownloadManager.h */,
-				A8163F811D938B8E004038E9 /* HJDownloadManager.m */,
+				A81E093F1E558C9100082D32 /* NSObject+RuntimeHelper.h */,
+				A81E09401E558C9100082D32 /* NSObject+RuntimeHelper.m */,
 			);
-			path = "下载";
+			path = Runtime;
 			sourceTree = "<group>";
 		};
 		A87B891F1DDD53EA00F4DC22 /* GCD */ = {
@@ -513,6 +508,45 @@
 			path = "github精美UI";
 			sourceTree = "<group>";
 		};
+		A8E0E4811E9B869E00F16E7C /* 网络 */ = {
+			isa = PBXGroup;
+			children = (
+				A8E0E48A1E9B894C00F16E7C /* 网络缓存与下载 */,
+				A8E0E4821E9B869E00F16E7C /* 下载 */,
+				A8E0E4851E9B869E00F16E7C /* 网络状态判断 */,
+			);
+			path = "网络";
+			sourceTree = "<group>";
+		};
+		A8E0E4821E9B869E00F16E7C /* 下载 */ = {
+			isa = PBXGroup;
+			children = (
+				A8E0E4831E9B869E00F16E7C /* HJDownloadManager.h */,
+				A8E0E4841E9B869E00F16E7C /* HJDownloadManager.m */,
+			);
+			path = "下载";
+			sourceTree = "<group>";
+		};
+		A8E0E4851E9B869E00F16E7C /* 网络状态判断 */ = {
+			isa = PBXGroup;
+			children = (
+				A8E0E4861E9B869E00F16E7C /* HJNetWorkStateHelper.h */,
+				A8E0E4871E9B869E00F16E7C /* HJNetWorkStateHelper.m */,
+			);
+			path = "网络状态判断";
+			sourceTree = "<group>";
+		};
+		A8E0E48A1E9B894C00F16E7C /* 网络缓存与下载 */ = {
+			isa = PBXGroup;
+			children = (
+				A8E0E48B1E9B894C00F16E7C /* HJNetworkCache.h */,
+				A8E0E48C1E9B894C00F16E7C /* HJNetworkCache.m */,
+				A8E0E48D1E9B894C00F16E7C /* HJNetworkHelper.h */,
+				A8E0E48E1E9B894C00F16E7C /* HJNetworkHelper.m */,
+			);
+			path = "网络缓存与下载";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -520,12 +554,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26172F761BD7E99500D7A91F /* Build configuration list for PBXNativeTarget "HJAppHelper" */;
 			buildPhases = (
-				30268CFCCE728BB1761F4836 /* 📦 Check Pods Manifest.lock */,
+				30268CFCCE728BB1761F4836 /* [CP] Check Pods Manifest.lock */,
 				26172F451BD7E99500D7A91F /* Sources */,
 				26172F461BD7E99500D7A91F /* Frameworks */,
 				26172F471BD7E99500D7A91F /* Resources */,
-				C505F37B07A16F16EA6C535D /* 📦 Embed Pods Frameworks */,
-				D384D68CE027908A77451489 /* 📦 Copy Pods Resources */,
+				C505F37B07A16F16EA6C535D /* [CP] Embed Pods Frameworks */,
+				D384D68CE027908A77451489 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -644,29 +678,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		30268CFCCE728BB1761F4836 /* 📦 Check Pods Manifest.lock */ = {
+		30268CFCCE728BB1761F4836 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C505F37B07A16F16EA6C535D /* 📦 Embed Pods Frameworks */ = {
+		C505F37B07A16F16EA6C535D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -674,14 +708,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HJAppHelper/Pods-HJAppHelper-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D384D68CE027908A77451489 /* 📦 Copy Pods Resources */ = {
+		D384D68CE027908A77451489 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -705,24 +739,26 @@
 				26A634501C97E3A400924952 /* HJEncryptHelpers.m in Sources */,
 				A8C757C21DAA1201001BB31A /* HJFileManager.m in Sources */,
 				26172F4E1BD7E99500D7A91F /* main.m in Sources */,
+				A8E0E4901E9B894C00F16E7C /* HJNetworkHelper.m in Sources */,
 				26A634241C9799C000924952 /* UITableView+Helper.m in Sources */,
 				26A6344F1C97E3A400924952 /* GTMBase64.m in Sources */,
+				A8E0E4881E9B869E00F16E7C /* HJDownloadManager.m in Sources */,
+				A8E0E4891E9B869E00F16E7C /* HJNetWorkStateHelper.m in Sources */,
 				26A634551C97E3A400924952 /* HJAddressBookModel.m in Sources */,
 				260812EA1C9062850079ABC8 /* UIImage+Utility.m in Sources */,
 				26A634511C97E3A400924952 /* README.md in Sources */,
 				26A634541C97E3A400924952 /* HJAddressBookManager.m in Sources */,
-				26172F821BD7EB0100D7A91F /* HJAppHelpers.m in Sources */,
 				26A6342B1C979AAF00924952 /* NSMutableArray+SafeArray.m in Sources */,
 				26A6342F1C979B7400924952 /* NSObject+ResolveTimestamp.m in Sources */,
+				A81E09411E558C9100082D32 /* NSObject+RuntimeHelper.m in Sources */,
 				26C2F36D1CE0F71300486989 /* NSDate+Helper.m in Sources */,
 				A89BC1011DB0B16E0088660A /* XLTextField.m in Sources */,
 				265CF5BE1CEF3F79005338AD /* TTTAttributedLabel.m in Sources */,
 				26A634521C97E3A400924952 /* HJVerifyManager.m in Sources */,
-				A8163F821D938B8E004038E9 /* HJDownloadManager.m in Sources */,
-				26A634591C97E42000924952 /* HJNetWorkStateHelper.m in Sources */,
 				A89542551DBDE1DB006AA824 /* IosAudioController.m in Sources */,
 				A87B89221DDD540600F4DC22 /* HJGCDManager.m in Sources */,
 				26A634531C97E3A400924952 /* HJImageColorTool.m in Sources */,
+				A8E0E48F1E9B894C00F16E7C /* HJNetworkCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

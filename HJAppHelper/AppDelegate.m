@@ -7,11 +7,12 @@
 //
 
 #import "AppDelegate.h"
-#import "HJAppHelpers.h"
 #import "HJAddressBookManager.h"
 #import "HJDateTool.h"
 #import "HJVerifyManager.h"
 #import "NSDate+Utilities.h"
+#import "HJAddressBookModel.h"
+#import "NSObject+RuntimeHelper.h"
 
 @interface AppDelegate ()
 
@@ -37,28 +38,16 @@
     
     //[self verifyMobile:@"18970280703"];
     
-    NSInteger week = [[NSDate date] week];
-    NSLog(@"week : %ld",(long)week);
+//    NSInteger week = [[NSDate date] week];
+//    NSLog(@"week : %ld",(long)week);
+    
+    
+    HJAddressBookModel * model = [[HJAddressBookModel alloc] init];
+    
+    [model getIvarList];
+    [model getPropertyList];
     
     return YES;
-}
-
-#pragma mark - 加密or解密
-- (void)encryptData {
-
-    NSString * md5HJ = [HJAppHelpers md5HexDigest:@"黄健"];
-    NSLog(@"md5HJ : %@",md5HJ);
-    
-    NSData * data = [@"黄健" dataUsingEncoding:NSUTF8StringEncoding];
-    
-    //加密
-    NSData * encryptData = [HJAppHelpers AES256EncryptWithKey:@"hj" value:data];
-    NSString * enStr = [[NSString alloc] initWithData:encryptData encoding:NSUTF8StringEncoding];
-    NSLog(@"enStr : %@",enStr);
-    //解密
-    NSData * decData = [HJAppHelpers AES256DecryptWithKey:@"hj" value:encryptData];
-    NSString * decStr = [[NSString alloc] initWithData:decData encoding:NSUTF8StringEncoding];
-    NSLog(@"decStr : %@",decStr);
 }
 
 //获取通讯录

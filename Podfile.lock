@@ -19,19 +19,22 @@ PODS:
   - SDWebImage (3.7.3):
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
+  - YYCache (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0.4)
   - IQKeyboardManager (~> 4.0.2)
   - Masonry (~> 0.6.4)
   - SDWebImage (~> 3.7.3)
+  - YYCache (~> 1.0.4)
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
   IQKeyboardManager: 2341089c4ae25fa2fa82ce356a259fcd267dc6b6
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 2329a23564435a77b6b313fe65143698ae373e87
+PODFILE CHECKSUM: f31a40f01bfe1ef54b99104084c5a833f1898e9b
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.2.0.beta.1
