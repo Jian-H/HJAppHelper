@@ -11,7 +11,6 @@
 		260812EA1C9062850079ABC8 /* UIImage+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 260812E91C9062850079ABC8 /* UIImage+Utility.m */; };
 		26172F4E1BD7E99500D7A91F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172F4D1BD7E99500D7A91F /* main.m */; };
 		26172F511BD7E99500D7A91F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172F501BD7E99500D7A91F /* AppDelegate.m */; };
-		26172F541BD7E99500D7A91F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172F531BD7E99500D7A91F /* ViewController.m */; };
 		26172F571BD7E99500D7A91F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26172F551BD7E99500D7A91F /* Main.storyboard */; };
 		26172F591BD7E99500D7A91F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26172F581BD7E99500D7A91F /* Assets.xcassets */; };
 		26172F5C1BD7E99500D7A91F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26172F5A1BD7E99500D7A91F /* LaunchScreen.storyboard */; };
@@ -45,6 +44,10 @@
 		A8E0E4891E9B869E00F16E7C /* HJNetWorkStateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E0E4871E9B869E00F16E7C /* HJNetWorkStateHelper.m */; };
 		A8E0E48F1E9B894C00F16E7C /* HJNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E0E48C1E9B894C00F16E7C /* HJNetworkCache.m */; };
 		A8E0E4901E9B894C00F16E7C /* HJNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E0E48E1E9B894C00F16E7C /* HJNetworkHelper.m */; };
+		A8E0E49A1E9B8D2300F16E7C /* HJ_BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E0E4991E9B8D2300F16E7C /* HJ_BaseViewController.m */; };
+		A8E0E49D1E9B8D4400F16E7C /* HJ_FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E0E49C1E9B8D4400F16E7C /* HJ_FirstViewController.m */; };
+		A8E0E4A01E9B8D4E00F16E7C /* HJ_SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E0E49F1E9B8D4E00F16E7C /* HJ_SecondViewController.m */; };
+		A8E0E4A31E9B8DDA00F16E7C /* HJ_BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E0E4A21E9B8DDA00F16E7C /* HJ_BaseTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,8 +77,6 @@
 		26172F4D1BD7E99500D7A91F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		26172F4F1BD7E99500D7A91F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		26172F501BD7E99500D7A91F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		26172F521BD7E99500D7A91F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		26172F531BD7E99500D7A91F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		26172F561BD7E99500D7A91F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26172F581BD7E99500D7A91F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26172F5B1BD7E99500D7A91F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -138,6 +139,14 @@
 		A8E0E48C1E9B894C00F16E7C /* HJNetworkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJNetworkCache.m; sourceTree = "<group>"; };
 		A8E0E48D1E9B894C00F16E7C /* HJNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJNetworkHelper.h; sourceTree = "<group>"; };
 		A8E0E48E1E9B894C00F16E7C /* HJNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJNetworkHelper.m; sourceTree = "<group>"; };
+		A8E0E4981E9B8D2300F16E7C /* HJ_BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJ_BaseViewController.h; sourceTree = "<group>"; };
+		A8E0E4991E9B8D2300F16E7C /* HJ_BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJ_BaseViewController.m; sourceTree = "<group>"; };
+		A8E0E49B1E9B8D4400F16E7C /* HJ_FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJ_FirstViewController.h; sourceTree = "<group>"; };
+		A8E0E49C1E9B8D4400F16E7C /* HJ_FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJ_FirstViewController.m; sourceTree = "<group>"; };
+		A8E0E49E1E9B8D4E00F16E7C /* HJ_SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJ_SecondViewController.h; sourceTree = "<group>"; };
+		A8E0E49F1E9B8D4E00F16E7C /* HJ_SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJ_SecondViewController.m; sourceTree = "<group>"; };
+		A8E0E4A11E9B8DDA00F16E7C /* HJ_BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJ_BaseTabBarController.h; sourceTree = "<group>"; };
+		A8E0E4A21E9B8DDA00F16E7C /* HJ_BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJ_BaseTabBarController.m; sourceTree = "<group>"; };
 		D939575020005725F17D2E0B /* Pods-HJAppHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJAppHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HJAppHelper/Pods-HJAppHelper.debug.xcconfig"; sourceTree = "<group>"; };
 		E1798CC2AD0C18B02025F4EF /* Pods-HJAppHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJAppHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-HJAppHelper/Pods-HJAppHelper.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -234,11 +243,11 @@
 		26172F4B1BD7E99500D7A91F /* HJAppHelper */ = {
 			isa = PBXGroup;
 			children = (
-				2676C6841C12C3260067EFE7 /* Project */,
 				26172F4F1BD7E99500D7A91F /* AppDelegate.h */,
 				26172F501BD7E99500D7A91F /* AppDelegate.m */,
-				26172F521BD7E99500D7A91F /* ViewController.h */,
-				26172F531BD7E99500D7A91F /* ViewController.m */,
+				2676C6841C12C3260067EFE7 /* Project */,
+				A8E0E4921E9B8C1200F16E7C /* Demo */,
+				A8E0E4971E9B8CD900F16E7C /* Public */,
 				26172F551BD7E99500D7A91F /* Main.storyboard */,
 				26172F581BD7E99500D7A91F /* Assets.xcassets */,
 				26172F5A1BD7E99500D7A91F /* LaunchScreen.storyboard */,
@@ -547,6 +556,60 @@
 			path = "网络缓存与下载";
 			sourceTree = "<group>";
 		};
+		A8E0E4921E9B8C1200F16E7C /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				A8E0E4931E9B8C6200F16E7C /* First */,
+				A8E0E4951E9B8C6200F16E7C /* Second */,
+				A8E0E4961E9B8C6200F16E7C /* Third */,
+				A8E0E4941E9B8C6200F16E7C /* Fourth */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		A8E0E4931E9B8C6200F16E7C /* First */ = {
+			isa = PBXGroup;
+			children = (
+				A8E0E49B1E9B8D4400F16E7C /* HJ_FirstViewController.h */,
+				A8E0E49C1E9B8D4400F16E7C /* HJ_FirstViewController.m */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		A8E0E4941E9B8C6200F16E7C /* Fourth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fourth;
+			sourceTree = "<group>";
+		};
+		A8E0E4951E9B8C6200F16E7C /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				A8E0E49E1E9B8D4E00F16E7C /* HJ_SecondViewController.h */,
+				A8E0E49F1E9B8D4E00F16E7C /* HJ_SecondViewController.m */,
+			);
+			path = Second;
+			sourceTree = "<group>";
+		};
+		A8E0E4961E9B8C6200F16E7C /* Third */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		A8E0E4971E9B8CD900F16E7C /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				A8E0E4981E9B8D2300F16E7C /* HJ_BaseViewController.h */,
+				A8E0E4991E9B8D2300F16E7C /* HJ_BaseViewController.m */,
+				A8E0E4A11E9B8DDA00F16E7C /* HJ_BaseTabBarController.h */,
+				A8E0E4A21E9B8DDA00F16E7C /* HJ_BaseTabBarController.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -612,6 +675,7 @@
 		26172F411BD7E99500D7A91F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HJ_;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = huangjian;
 				TargetAttributes = {
@@ -731,7 +795,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2637BF851D21FA2E004C0AA9 /* HJPlainFlowLayout.m in Sources */,
-				26172F541BD7E99500D7A91F /* ViewController.m in Sources */,
 				26172F511BD7E99500D7A91F /* AppDelegate.m in Sources */,
 				26C2F36A1CE0EBF500486989 /* NSDate+Utilities.m in Sources */,
 				260812E71C9062090079ABC8 /* UINavigationBar+Addition.m in Sources */,
@@ -747,8 +810,10 @@
 				26A634551C97E3A400924952 /* HJAddressBookModel.m in Sources */,
 				260812EA1C9062850079ABC8 /* UIImage+Utility.m in Sources */,
 				26A634511C97E3A400924952 /* README.md in Sources */,
+				A8E0E4A31E9B8DDA00F16E7C /* HJ_BaseTabBarController.m in Sources */,
 				26A634541C97E3A400924952 /* HJAddressBookManager.m in Sources */,
 				26A6342B1C979AAF00924952 /* NSMutableArray+SafeArray.m in Sources */,
+				A8E0E49A1E9B8D2300F16E7C /* HJ_BaseViewController.m in Sources */,
 				26A6342F1C979B7400924952 /* NSObject+ResolveTimestamp.m in Sources */,
 				A81E09411E558C9100082D32 /* NSObject+RuntimeHelper.m in Sources */,
 				26C2F36D1CE0F71300486989 /* NSDate+Helper.m in Sources */,
@@ -757,6 +822,8 @@
 				26A634521C97E3A400924952 /* HJVerifyManager.m in Sources */,
 				A89542551DBDE1DB006AA824 /* IosAudioController.m in Sources */,
 				A87B89221DDD540600F4DC22 /* HJGCDManager.m in Sources */,
+				A8E0E4A01E9B8D4E00F16E7C /* HJ_SecondViewController.m in Sources */,
+				A8E0E49D1E9B8D4400F16E7C /* HJ_FirstViewController.m in Sources */,
 				26A634531C97E3A400924952 /* HJImageColorTool.m in Sources */,
 				A8E0E48F1E9B894C00F16E7C /* HJNetworkCache.m in Sources */,
 			);
