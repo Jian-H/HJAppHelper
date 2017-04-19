@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HJ_BaseViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface HJ_BaseViewController : UIViewController
 
 @end
