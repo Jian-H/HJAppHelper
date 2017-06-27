@@ -10,6 +10,8 @@
 #import "HJ_PublicTableViewCell.h"
 #import "HJ_NetworkHelperViewController.h"
 #import "HJ_KeyChainManagerViewController.h"
+#import "HJ_AddressBookViewController.h"
+#import "HJ_ValidateViewController.h"
 
 @interface HJ_FirstViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -24,6 +26,8 @@
     if (!_mTitleArray) {
         _mTitleArray = [NSMutableArray arrayWithObjects:@"网路数据缓存与下载",
                                                         @"KeyChain（钥匙串）增删改查",
+                                                        @"通讯录读取",
+                                                        @"正则验证",
                                                         nil];
     }
     return _mTitleArray;
@@ -79,6 +83,27 @@
             keyChainManagerViewController.hidesBottomBarWhenPushed = YES;
             
             [self.navigationController pushViewController:keyChainManagerViewController animated:YES];
+        }
+            break;
+        
+        case 2: {
+        
+            HJ_AddressBookViewController * addressBookViewController = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([HJ_AddressBookViewController class])];
+            
+            addressBookViewController.hidesBottomBarWhenPushed = YES;
+            
+            [self.navigationController pushViewController:addressBookViewController animated:YES];
+        }
+            break;
+            
+        case 3: {
+        
+            HJ_ValidateViewController * validateViewController= [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([HJ_ValidateViewController class])];
+            
+            validateViewController.hidesBottomBarWhenPushed = YES;
+            
+            [self.navigationController pushViewController:validateViewController animated:YES];
+
         }
             break;
             

@@ -24,15 +24,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    //加密or解密
-    //[self encryptData];
-    
-    //下载图片
-    //[self downloadImage];
-    
-    //获取通讯录
-    //[self obtainAddressBook];
-    
     //时间戳转换成时间
     //[self calculateDate];
     
@@ -48,30 +39,6 @@
     [model getPropertyList];
     
     return YES;
-}
-
-//获取通讯录
-- (void)obtainAddressBook {
-
-    [[HJAddressBookManager sharedInstance] obtainAddressBookWithGetJurisdictionBlock:^(BOOL haveJurisdiction) {
-        
-        if (!haveJurisdiction) {
-            NSLog(@"没权限");
-        }
-        
-    } failBlock:^(BOOL fail) {
-        if (fail) {
-            NSLog(@"获取失败");
-        }
-    } haveNoPeopleBlock:^(BOOL haveNoPeople) {
-        if (haveNoPeople) {
-            NSLog(@"通讯录无人");
-        }
-    } finishedBlock:^(NSMutableArray *addressBooks) {
-       
-        NSLog(@"addressBook : %@",addressBooks);
-        
-    }];
 }
 
 #pragma mark - 时间戳转换

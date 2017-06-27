@@ -29,7 +29,7 @@ static HJAddressBookManager * manager = nil;
 - (void)obtainAddressBookWithGetJurisdictionBlock:(void (^)(BOOL))jurisdictionBlock
                                         failBlock:(void(^)(BOOL))failBlock
                                 haveNoPeopleBlock:(void (^)(BOOL))haveNoPeopleBlock
-                                    finishedBlock:(void (^)(NSMutableArray *))finishedBlock {
+                                    finishedBlock:(void (^)(NSMutableArray <HJAddressBookModel *> *))finishedBlock {
 
     //定义通讯录名称
     ABAddressBookRef addressBook = ABAddressBookCreateWithOptions(NULL, NULL);

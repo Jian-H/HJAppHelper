@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class HJPhoneModel,HJEmailModel,HJAddressModel;
+
 @interface HJAddressBookModel : NSObject <NSCopying,NSMutableCopying>
 
 @property (nonatomic, strong) NSString * name;              //姓名
@@ -16,9 +18,9 @@
 @property (nonatomic, strong) NSString * companyName;       //公司名
 @property (nonatomic, strong) NSString * department;        //部门
 @property (nonatomic, strong) NSString * position;          //职位
-@property (nonatomic, strong) NSArray  * phone;             //手机 (包括固话)
-@property (nonatomic, strong) NSArray * address;            //地址
-@property (nonatomic, strong) NSArray * email;              //邮箱
+@property (nonatomic, strong) NSArray <HJPhoneModel *>  * phone;             //手机 (包括固话)
+@property (nonatomic, strong) NSArray <HJAddressModel *> * address;            //地址
+@property (nonatomic, strong) NSArray <HJEmailModel *> * email;              //邮箱
 
 @end
 

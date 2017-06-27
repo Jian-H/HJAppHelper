@@ -35,13 +35,16 @@
 		26C2F36D1CE0F71300486989 /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C2F36C1CE0F71300486989 /* NSDate+Helper.m */; };
 		32AD6F7F398252E0E6AF52BC /* libPods-HJAppHelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5131C19C64EB784DAB2839BB /* libPods-HJAppHelper.a */; };
 		A81E09411E558C9100082D32 /* NSObject+RuntimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A81E09401E558C9100082D32 /* NSObject+RuntimeHelper.m */; };
+		A82571491F0231C1006CBEFA /* HJ_NetworkHelperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A82571451F0231C1006CBEFA /* HJ_NetworkHelperViewController.m */; };
+		A825714A1F0231C1006CBEFA /* HJ_KeyChainManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A82571481F0231C1006CBEFA /* HJ_KeyChainManagerViewController.m */; };
+		A825714E1F02324C006CBEFA /* HJ_AddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A825714D1F02324C006CBEFA /* HJ_AddressBookViewController.m */; };
+		A82571511F023314006CBEFA /* HJ_AddressBookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A82571501F023314006CBEFA /* HJ_AddressBookCell.m */; };
+		A82571551F024A58006CBEFA /* HJ_ValidateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A82571541F024A58006CBEFA /* HJ_ValidateViewController.m */; };
 		A83B9D2F1EA74CF300D0DC31 /* HJ_KeyChainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A83B9D2E1EA74CF300D0DC31 /* HJ_KeyChainManager.m */; };
-		A83B9D331EA7509900D0DC31 /* HJ_KeyChainManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A83B9D321EA7509900D0DC31 /* HJ_KeyChainManagerViewController.m */; };
 		A87B89221DDD540600F4DC22 /* HJGCDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A87B89211DDD540600F4DC22 /* HJGCDManager.m */; };
 		A89542551DBDE1DB006AA824 /* IosAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = A89542541DBDE1DB006AA824 /* IosAudioController.m */; };
 		A89BC1011DB0B16E0088660A /* XLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A89BC1001DB0B16E0088660A /* XLTextField.m */; };
 		A8B13F7C1E9E17DF000AEC16 /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B13F7B1E9E17DF000AEC16 /* First.storyboard */; };
-		A8B13F801E9E199E000AEC16 /* HJ_NetworkHelperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B13F7F1E9E199E000AEC16 /* HJ_NetworkHelperViewController.m */; };
 		A8B13F831E9E1A5A000AEC16 /* HJ_PublicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B13F821E9E1A5A000AEC16 /* HJ_PublicTableViewCell.m */; };
 		A8C757C21DAA1201001BB31A /* HJFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C757C11DAA1201001BB31A /* HJFileManager.m */; };
 		A8C9BDC71DAA39AA007D8D71 /* github精美UI介绍.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8C9BDC61DAA39AA007D8D71 /* github精美UI介绍.strings */; };
@@ -127,10 +130,18 @@
 		5131C19C64EB784DAB2839BB /* libPods-HJAppHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HJAppHelper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A81E093F1E558C9100082D32 /* NSObject+RuntimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RuntimeHelper.h"; sourceTree = "<group>"; };
 		A81E09401E558C9100082D32 /* NSObject+RuntimeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RuntimeHelper.m"; sourceTree = "<group>"; };
+		A82571441F0231C1006CBEFA /* HJ_NetworkHelperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJ_NetworkHelperViewController.h; sourceTree = "<group>"; };
+		A82571451F0231C1006CBEFA /* HJ_NetworkHelperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJ_NetworkHelperViewController.m; sourceTree = "<group>"; };
+		A82571471F0231C1006CBEFA /* HJ_KeyChainManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJ_KeyChainManagerViewController.h; sourceTree = "<group>"; };
+		A82571481F0231C1006CBEFA /* HJ_KeyChainManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJ_KeyChainManagerViewController.m; sourceTree = "<group>"; };
+		A825714C1F02324C006CBEFA /* HJ_AddressBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJ_AddressBookViewController.h; sourceTree = "<group>"; };
+		A825714D1F02324C006CBEFA /* HJ_AddressBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJ_AddressBookViewController.m; sourceTree = "<group>"; };
+		A825714F1F023314006CBEFA /* HJ_AddressBookCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJ_AddressBookCell.h; sourceTree = "<group>"; };
+		A82571501F023314006CBEFA /* HJ_AddressBookCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJ_AddressBookCell.m; sourceTree = "<group>"; };
+		A82571531F024A58006CBEFA /* HJ_ValidateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJ_ValidateViewController.h; sourceTree = "<group>"; };
+		A82571541F024A58006CBEFA /* HJ_ValidateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJ_ValidateViewController.m; sourceTree = "<group>"; };
 		A83B9D2D1EA74CF300D0DC31 /* HJ_KeyChainManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJ_KeyChainManager.h; sourceTree = "<group>"; };
 		A83B9D2E1EA74CF300D0DC31 /* HJ_KeyChainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJ_KeyChainManager.m; sourceTree = "<group>"; };
-		A83B9D311EA7509900D0DC31 /* HJ_KeyChainManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJ_KeyChainManagerViewController.h; sourceTree = "<group>"; };
-		A83B9D321EA7509900D0DC31 /* HJ_KeyChainManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJ_KeyChainManagerViewController.m; sourceTree = "<group>"; };
 		A87B89201DDD540600F4DC22 /* HJGCDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJGCDManager.h; sourceTree = "<group>"; };
 		A87B89211DDD540600F4DC22 /* HJGCDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJGCDManager.m; sourceTree = "<group>"; };
 		A89542531DBDE1DB006AA824 /* IosAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IosAudioController.h; sourceTree = "<group>"; };
@@ -138,8 +149,6 @@
 		A89BC0FF1DB0B16E0088660A /* XLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTextField.h; sourceTree = "<group>"; };
 		A89BC1001DB0B16E0088660A /* XLTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTextField.m; sourceTree = "<group>"; };
 		A8B13F7B1E9E17DF000AEC16 /* First.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = First.storyboard; sourceTree = "<group>"; };
-		A8B13F7E1E9E199E000AEC16 /* HJ_NetworkHelperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJ_NetworkHelperViewController.h; sourceTree = "<group>"; };
-		A8B13F7F1E9E199E000AEC16 /* HJ_NetworkHelperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJ_NetworkHelperViewController.m; sourceTree = "<group>"; };
 		A8B13F811E9E1A5A000AEC16 /* HJ_PublicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJ_PublicTableViewCell.h; sourceTree = "<group>"; };
 		A8B13F821E9E1A5A000AEC16 /* HJ_PublicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJ_PublicTableViewCell.m; sourceTree = "<group>"; };
 		A8C757C01DAA1201001BB31A /* HJFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJFileManager.h; sourceTree = "<group>"; };
@@ -480,6 +489,44 @@
 			path = Runtime;
 			sourceTree = "<group>";
 		};
+		A82571431F0231C1006CBEFA /* 网络数据缓存与下载 */ = {
+			isa = PBXGroup;
+			children = (
+				A82571441F0231C1006CBEFA /* HJ_NetworkHelperViewController.h */,
+				A82571451F0231C1006CBEFA /* HJ_NetworkHelperViewController.m */,
+			);
+			path = "网络数据缓存与下载";
+			sourceTree = "<group>";
+		};
+		A82571461F0231C1006CBEFA /* KeyChain（钥匙串）增删改查 */ = {
+			isa = PBXGroup;
+			children = (
+				A82571471F0231C1006CBEFA /* HJ_KeyChainManagerViewController.h */,
+				A82571481F0231C1006CBEFA /* HJ_KeyChainManagerViewController.m */,
+			);
+			path = "KeyChain（钥匙串）增删改查";
+			sourceTree = "<group>";
+		};
+		A825714B1F023204006CBEFA /* 通讯录读取 */ = {
+			isa = PBXGroup;
+			children = (
+				A825714C1F02324C006CBEFA /* HJ_AddressBookViewController.h */,
+				A825714D1F02324C006CBEFA /* HJ_AddressBookViewController.m */,
+				A825714F1F023314006CBEFA /* HJ_AddressBookCell.h */,
+				A82571501F023314006CBEFA /* HJ_AddressBookCell.m */,
+			);
+			path = "通讯录读取";
+			sourceTree = "<group>";
+		};
+		A82571521F024A30006CBEFA /* 正则验证 */ = {
+			isa = PBXGroup;
+			children = (
+				A82571531F024A58006CBEFA /* HJ_ValidateViewController.h */,
+				A82571541F024A58006CBEFA /* HJ_ValidateViewController.m */,
+			);
+			path = "正则验证";
+			sourceTree = "<group>";
+		};
 		A83B9D2C1EA74CC000D0DC31 /* KeyChain（钥匙串）增删改查 */ = {
 			isa = PBXGroup;
 			children = (
@@ -487,15 +534,6 @@
 				A83B9D2E1EA74CF300D0DC31 /* HJ_KeyChainManager.m */,
 			);
 			path = "KeyChain（钥匙串）增删改查";
-			sourceTree = "<group>";
-		};
-		A83B9D301EA7504100D0DC31 /* KeyChain（钥匙串）增删改查 */ = {
-			isa = PBXGroup;
-			children = (
-				A83B9D311EA7509900D0DC31 /* HJ_KeyChainManagerViewController.h */,
-				A83B9D321EA7509900D0DC31 /* HJ_KeyChainManagerViewController.m */,
-			);
-			name = "KeyChain（钥匙串）增删改查";
 			sourceTree = "<group>";
 		};
 		A87B891F1DDD53EA00F4DC22 /* GCD */ = {
@@ -531,15 +569,6 @@
 				A89BC1001DB0B16E0088660A /* XLTextField.m */,
 			);
 			path = MailSuffix;
-			sourceTree = "<group>";
-		};
-		A8B13F7D1E9E1841000AEC16 /* 网络数据缓存与下载 */ = {
-			isa = PBXGroup;
-			children = (
-				A8B13F7E1E9E199E000AEC16 /* HJ_NetworkHelperViewController.h */,
-				A8B13F7F1E9E199E000AEC16 /* HJ_NetworkHelperViewController.m */,
-			);
-			name = "网络数据缓存与下载";
 			sourceTree = "<group>";
 		};
 		A8C757BF1DAA11D4001BB31A /* 文件管理 */ = {
@@ -615,8 +644,10 @@
 				A8B13F7B1E9E17DF000AEC16 /* First.storyboard */,
 				A8E0E49B1E9B8D4400F16E7C /* HJ_FirstViewController.h */,
 				A8E0E49C1E9B8D4400F16E7C /* HJ_FirstViewController.m */,
-				A8B13F7D1E9E1841000AEC16 /* 网络数据缓存与下载 */,
-				A83B9D301EA7504100D0DC31 /* KeyChain（钥匙串）增删改查 */,
+				A82571431F0231C1006CBEFA /* 网络数据缓存与下载 */,
+				A82571461F0231C1006CBEFA /* KeyChain（钥匙串）增删改查 */,
+				A825714B1F023204006CBEFA /* 通讯录读取 */,
+				A82571521F024A30006CBEFA /* 正则验证 */,
 			);
 			path = First;
 			sourceTree = "<group>";
@@ -856,7 +887,8 @@
 				A8E0E4881E9B869E00F16E7C /* HJDownloadManager.m in Sources */,
 				A8E0E4891E9B869E00F16E7C /* HJNetWorkStateHelper.m in Sources */,
 				26A634551C97E3A400924952 /* HJAddressBookModel.m in Sources */,
-				A8B13F801E9E199E000AEC16 /* HJ_NetworkHelperViewController.m in Sources */,
+				A825714E1F02324C006CBEFA /* HJ_AddressBookViewController.m in Sources */,
+				A82571511F023314006CBEFA /* HJ_AddressBookCell.m in Sources */,
 				260812EA1C9062850079ABC8 /* UIImage+Utility.m in Sources */,
 				26A634511C97E3A400924952 /* README.md in Sources */,
 				A8E0E4A31E9B8DDA00F16E7C /* HJ_BaseTabBarController.m in Sources */,
@@ -866,9 +898,10 @@
 				A8E0E49A1E9B8D2300F16E7C /* HJ_BaseViewController.m in Sources */,
 				26A6342F1C979B7400924952 /* NSObject+ResolveTimestamp.m in Sources */,
 				A81E09411E558C9100082D32 /* NSObject+RuntimeHelper.m in Sources */,
-				A83B9D331EA7509900D0DC31 /* HJ_KeyChainManagerViewController.m in Sources */,
 				26C2F36D1CE0F71300486989 /* NSDate+Helper.m in Sources */,
+				A825714A1F0231C1006CBEFA /* HJ_KeyChainManagerViewController.m in Sources */,
 				A89BC1011DB0B16E0088660A /* XLTextField.m in Sources */,
+				A82571551F024A58006CBEFA /* HJ_ValidateViewController.m in Sources */,
 				265CF5BE1CEF3F79005338AD /* TTTAttributedLabel.m in Sources */,
 				26A634521C97E3A400924952 /* HJVerifyManager.m in Sources */,
 				A89542551DBDE1DB006AA824 /* IosAudioController.m in Sources */,
@@ -878,6 +911,7 @@
 				A8E0E49D1E9B8D4400F16E7C /* HJ_FirstViewController.m in Sources */,
 				26A634531C97E3A400924952 /* HJImageColorTool.m in Sources */,
 				A8E0E48F1E9B894C00F16E7C /* HJNetworkCache.m in Sources */,
+				A82571491F0231C1006CBEFA /* HJ_NetworkHelperViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

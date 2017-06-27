@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -247,11 +247,124 @@
                     <connections>
                         <outlet property="mKeyTextField" destination="vdV-Yi-kQ1" id="fn3-V1-5ak"/>
                         <outlet property="mValueTextField" destination="4H9-2i-3Nt" id="oX6-UN-D1t"/>
+                        <segue destination="NI9-ch-X4R" kind="push" identifier="HJ_AddressBookViewController" id="gbf-Do-UMB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jDt-zQ-mLF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1597.5999999999999" y="115.59220389805098"/>
+        </scene>
+        <!--Address Book View Controller-->
+        <scene sceneID="kxH-VU-LDM">
+            <objects>
+                <viewController storyboardIdentifier="HJ_AddressBookViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NI9-ch-X4R" customClass="HJ_AddressBookViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ytA-oc-JXn"/>
+                        <viewControllerLayoutGuide type="bottom" id="uY8-lM-dSR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qGw-g8-iAj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="62" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eP6-0E-flL">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HJ_AddressBookCell" rowHeight="60" id="48V-vD-bJh" customClass="HJ_AddressBookCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="48V-vD-bJh" id="Gjy-CM-mMb">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xav-oN-FWV">
+                                                    <rect key="frame" x="15" y="0.0" width="120" height="59.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="120" id="AUd-yv-hhe"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMR-pC-5yK">
+                                                    <rect key="frame" x="140" y="0.0" width="220" height="59.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Xav-oN-FWV" firstAttribute="top" secondItem="Gjy-CM-mMb" secondAttribute="top" id="44T-v2-TWk"/>
+                                                <constraint firstAttribute="bottom" secondItem="sMR-pC-5yK" secondAttribute="bottom" id="5xh-ws-q1u"/>
+                                                <constraint firstAttribute="bottom" secondItem="Xav-oN-FWV" secondAttribute="bottom" id="Enc-pO-762"/>
+                                                <constraint firstItem="sMR-pC-5yK" firstAttribute="leading" secondItem="Xav-oN-FWV" secondAttribute="trailing" constant="5" id="RSJ-JR-Qq4"/>
+                                                <constraint firstItem="sMR-pC-5yK" firstAttribute="top" secondItem="Gjy-CM-mMb" secondAttribute="top" id="XbM-1V-Pcz"/>
+                                                <constraint firstAttribute="trailing" secondItem="sMR-pC-5yK" secondAttribute="trailing" constant="15" id="Yey-9o-Bz3"/>
+                                                <constraint firstItem="Xav-oN-FWV" firstAttribute="leading" secondItem="Gjy-CM-mMb" secondAttribute="leading" constant="15" id="vn6-S7-Sh5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="mInfoLabel" destination="sMR-pC-5yK" id="5fV-WA-uGq"/>
+                                            <outlet property="mNameLabel" destination="Xav-oN-FWV" id="Nec-lF-Cup"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="NI9-ch-X4R" id="iju-C2-Lod"/>
+                                    <outlet property="delegate" destination="NI9-ch-X4R" id="teg-T4-Jti"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eP6-0E-flL" secondAttribute="trailing" id="Nuq-bz-Yoo"/>
+                            <constraint firstItem="eP6-0E-flL" firstAttribute="leading" secondItem="qGw-g8-iAj" secondAttribute="leading" id="W1e-4U-RK2"/>
+                            <constraint firstItem="eP6-0E-flL" firstAttribute="top" secondItem="ytA-oc-JXn" secondAttribute="bottom" id="Z3q-bV-xUe"/>
+                            <constraint firstItem="uY8-lM-dSR" firstAttribute="top" secondItem="eP6-0E-flL" secondAttribute="bottom" id="v4N-Zt-qlh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vXe-h7-Qpi"/>
+                    <connections>
+                        <outlet property="mTableView" destination="eP6-0E-flL" id="t7N-wV-JLX"/>
+                        <segue destination="CXg-9Y-Sz0" kind="push" identifier="HJ_ValidateViewController" id="LM2-uh-Eis"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6aA-tl-EEB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2405.5999999999999" y="116.49175412293854"/>
+        </scene>
+        <!--Validate View Controller-->
+        <scene sceneID="XMN-As-loL">
+            <objects>
+                <viewController storyboardIdentifier="HJ_ValidateViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CXg-9Y-Sz0" customClass="HJ_ValidateViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="90X-vP-66S"/>
+                        <viewControllerLayoutGuide type="bottom" id="QL1-c3-77d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1qn-GH-7zW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查看HJVerifyManager类，具体里面有注释，包含电话号码，邮箱，身份证，车牌号，银行卡等" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pup-bf-5Fb">
+                                <rect key="frame" x="15" y="64" width="345" height="603"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pup-bf-5Fb" secondAttribute="trailing" constant="15" id="Iqh-OK-IcQ"/>
+                            <constraint firstItem="pup-bf-5Fb" firstAttribute="leading" secondItem="1qn-GH-7zW" secondAttribute="leading" constant="15" id="TCk-S0-zca"/>
+                            <constraint firstItem="QL1-c3-77d" firstAttribute="top" secondItem="pup-bf-5Fb" secondAttribute="bottom" id="k5X-u2-ppT"/>
+                            <constraint firstItem="pup-bf-5Fb" firstAttribute="top" secondItem="90X-vP-66S" secondAttribute="bottom" id="u3y-mQ-7Gr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="koM-q4-i7V"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6uv-B0-GIY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3196" y="116"/>
         </scene>
     </scenes>
 </document>

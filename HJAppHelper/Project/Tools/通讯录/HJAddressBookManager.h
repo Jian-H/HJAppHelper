@@ -29,6 +29,6 @@
 - (void)obtainAddressBookWithGetJurisdictionBlock:(void(^)(BOOL haveJurisdiction))jurisdictionBlock
                                         failBlock:(void(^)(BOOL fail))failBlock
                                 haveNoPeopleBlock:(void(^)(BOOL haveNoPeople))haveNoPeopleBlock
-                                    finishedBlock:(void(^)(NSMutableArray * addressBooks))finishedBlock ;
+                                    finishedBlock:(void(^)(NSMutableArray <HJAddressBookModel *> * addressBooks))finishedBlock ;
 
 @end
