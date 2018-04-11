@@ -76,4 +76,37 @@
  */
 + (void)dispatchAsyncWithQueue:(dispatch_queue_t)queue block:(void(^)())block;
 
+/**
+ 栅栏方法
+
+ @param queue 执行队列
+ @param block 执行任务
+ */
++ (void)dispatchBarrierAsyncWithQueue:(dispatch_queue_t)queue block:(void(^)())block;
+
+/**
+ 延时执行方法
+
+ @param queue 执行队列
+ @param seconds 延时秒数
+ @param block 执行任务
+ */
++ (void)dispatchAfterWithWithQueue:(dispatch_queue_t)queue seconds:(float)seconds block:(void(^)())block;
+
+/**
+ 一次性代码（只执行一次）
+
+ @param block 执行任务
+ */
++ (void)dispatchOnceWithBlock:(void(^)())block;
+
+/**
+ 快速迭代方法
+
+ @param queue 执行队列
+ @param time 次数
+ @param block 执行任务
+ */
++ (void)dispatchApplyWithQueue:(dispatch_queue_t)queue time:(size_t)time block:(void(^)(size_t index))block;
+
 @end

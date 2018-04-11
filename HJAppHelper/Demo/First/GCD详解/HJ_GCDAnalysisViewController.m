@@ -18,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
 }
 
 - (IBAction)testButtonAction:(UIButton *)sender {
@@ -305,6 +307,85 @@
         }
             break;
             
+        case 8: {
+            
+            NSLog(@"栅栏方法 - begin");
+            
+            [HJGCDManager dispatchAsyncWithQueue:concurrentDispatchQueue block:^{
+                
+                // 追加任务1
+                for (int i = 0; i < 2; ++i) {
+                    [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
+                    NSLog(@"1---%@",[NSThread currentThread]);      // 打印当前线程
+                }
+            }];
+            
+            [HJGCDManager dispatchAsyncWithQueue:concurrentDispatchQueue block:^{
+                
+                // 追加任务2
+                for (int i = 0; i < 2; ++i) {
+                    [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
+                    NSLog(@"2---%@",[NSThread currentThread]);      // 打印当前线程
+                }
+            }];
+            
+            [HJGCDManager dispatchBarrierAsyncWithQueue:concurrentDispatchQueue block:^{
+                
+                // 追加任务 barrier
+                for (int i = 0; i < 2; ++i) {
+                    [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
+                    NSLog(@"栅栏来了barrier---%@",[NSThread currentThread]);// 打印当前线程
+                }
+            }];
+            
+            [HJGCDManager dispatchAsyncWithQueue:concurrentDispatchQueue block:^{
+                
+                // 追加任务3
+                for (int i = 0; i < 2; ++i) {
+                    [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
+                    NSLog(@"3---%@",[NSThread currentThread]);      // 打印当前线程
+                }
+            }];
+            
+            [HJGCDManager dispatchAsyncWithQueue:concurrentDispatchQueue block:^{
+                
+                // 追加任务4
+                for (int i = 0; i < 2; ++i) {
+                    [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
+                    NSLog(@"4---%@",[NSThread currentThread]);      // 打印当前线程
+                }
+            }];
+            
+            
+            NSLog(@"栅栏方法 - end");
+            
+        }
+            break;
+            
+        case 9: {
+            
+            //延时执行方法
+            NSLog(@"延时执行方法 - begin");
+            
+            [HJGCDManager dispatchAfterWithWithQueue:mainDispathQueue seconds:3 block:^{
+                NSLog(@"延时执行方法after---%@",[NSThread currentThread]);  // 打印当前线程
+            }];
+            
+            NSLog(@"延时执行方法 - end");
+        }
+            break;
+        
+        case 10: {
+            
+            NSLog(@"快速迭代方法 - begin");
+            [HJGCDManager dispatchApplyWithQueue:globalDispatchQueue time:6 block:^(size_t index) {
+                NSLog(@"%zd---%@",index, [NSThread currentThread]);
+            }];
+            NSLog(@"快速迭代方法 - end");
+        
+        }
+            break;
+        
         default:
             break;
     }
