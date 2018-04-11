@@ -33,10 +33,10 @@
 //    NSLog(@"week : %ld",(long)week);
     
     
-    HJAddressBookModel * model = [[HJAddressBookModel alloc] init];
-    
-    [model getIvarList];
-    [model getPropertyList];
+//    HJAddressBookModel * model = [[HJAddressBookModel alloc] init];
+//    
+//    [model getIvarList];
+//    [model getPropertyList];
     
     return YES;
 }

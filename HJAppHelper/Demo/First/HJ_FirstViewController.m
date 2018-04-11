@@ -12,6 +12,7 @@
 #import "HJ_KeyChainManagerViewController.h"
 #import "HJ_AddressBookViewController.h"
 #import "HJ_ValidateViewController.h"
+#import "HJ_GCDAnalysisViewController.h"
 
 @interface HJ_FirstViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -28,6 +29,7 @@
                                                         @"KeyChain（钥匙串）增删改查",
                                                         @"通讯录读取",
                                                         @"正则验证",
+                                                        @"GCD详解",
                                                         nil];
     }
     return _mTitleArray;
@@ -104,6 +106,16 @@
             
             [self.navigationController pushViewController:validateViewController animated:YES];
 
+        }
+            break;
+            
+        case 4: {
+            
+            HJ_GCDAnalysisViewController * GCDAnalysisViewController = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([HJ_GCDAnalysisViewController class])];
+            
+            GCDAnalysisViewController.hidesBottomBarWhenPushed = YES;
+            
+            [self.navigationController pushViewController:GCDAnalysisViewController animated:YES];
         }
             break;
             
