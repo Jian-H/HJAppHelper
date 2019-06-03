@@ -41,6 +41,7 @@
 		A82571511F023314006CBEFA /* HJ_AddressBookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A82571501F023314006CBEFA /* HJ_AddressBookCell.m */; };
 		A82571551F024A58006CBEFA /* HJ_ValidateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A82571541F024A58006CBEFA /* HJ_ValidateViewController.m */; };
 		A83B9D2F1EA74CF300D0DC31 /* HJ_KeyChainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A83B9D2E1EA74CF300D0DC31 /* HJ_KeyChainManager.m */; };
+		A83CB01A22A4AC07007E1D2B /* HJ_WatermarkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A83CB01922A4AC07007E1D2B /* HJ_WatermarkManager.m */; };
 		A87B89221DDD540600F4DC22 /* HJGCDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A87B89211DDD540600F4DC22 /* HJGCDManager.m */; };
 		A89542551DBDE1DB006AA824 /* IosAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = A89542541DBDE1DB006AA824 /* IosAudioController.m */; };
 		A89BC1011DB0B16E0088660A /* XLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A89BC1001DB0B16E0088660A /* XLTextField.m */; };
@@ -143,6 +144,8 @@
 		A82571541F024A58006CBEFA /* HJ_ValidateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJ_ValidateViewController.m; sourceTree = "<group>"; };
 		A83B9D2D1EA74CF300D0DC31 /* HJ_KeyChainManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJ_KeyChainManager.h; sourceTree = "<group>"; };
 		A83B9D2E1EA74CF300D0DC31 /* HJ_KeyChainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJ_KeyChainManager.m; sourceTree = "<group>"; };
+		A83CB01822A4AC07007E1D2B /* HJ_WatermarkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJ_WatermarkManager.h; sourceTree = "<group>"; };
+		A83CB01922A4AC07007E1D2B /* HJ_WatermarkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJ_WatermarkManager.m; sourceTree = "<group>"; };
 		A87B89201DDD540600F4DC22 /* HJGCDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJGCDManager.h; sourceTree = "<group>"; };
 		A87B89211DDD540600F4DC22 /* HJGCDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJGCDManager.m; sourceTree = "<group>"; };
 		A89542531DBDE1DB006AA824 /* IosAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IosAudioController.h; sourceTree = "<group>"; };
@@ -409,6 +412,7 @@
 				26A634421C97E3A400924952 /* 正则验证 */,
 				26A634451C97E3A400924952 /* 获取图片颜色 */,
 				26A634481C97E3A400924952 /* 通讯录 */,
+				A83CB01622A4AB85007E1D2B /* 水印 */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -537,6 +541,23 @@
 				A83B9D2E1EA74CF300D0DC31 /* HJ_KeyChainManager.m */,
 			);
 			path = "KeyChain（钥匙串）增删改查";
+			sourceTree = "<group>";
+		};
+		A83CB01622A4AB85007E1D2B /* 水印 */ = {
+			isa = PBXGroup;
+			children = (
+				A83CB01722A4AB97007E1D2B /* 隐形水印 */,
+			);
+			path = "水印";
+			sourceTree = "<group>";
+		};
+		A83CB01722A4AB97007E1D2B /* 隐形水印 */ = {
+			isa = PBXGroup;
+			children = (
+				A83CB01822A4AC07007E1D2B /* HJ_WatermarkManager.h */,
+				A83CB01922A4AC07007E1D2B /* HJ_WatermarkManager.m */,
+			);
+			path = "隐形水印";
 			sourceTree = "<group>";
 		};
 		A87B891F1DDD53EA00F4DC22 /* GCD */ = {
@@ -789,6 +810,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -887,6 +909,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2637BF851D21FA2E004C0AA9 /* HJPlainFlowLayout.m in Sources */,
+				A83CB01A22A4AC07007E1D2B /* HJ_WatermarkManager.m in Sources */,
 				26172F511BD7E99500D7A91F /* AppDelegate.m in Sources */,
 				26C2F36A1CE0EBF500486989 /* NSDate+Utilities.m in Sources */,
 				260812E71C9062090079ABC8 /* UINavigationBar+Addition.m in Sources */,
