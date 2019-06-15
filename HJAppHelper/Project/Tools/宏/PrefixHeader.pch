@@ -14,6 +14,8 @@
 
 //#endif /* PrefixHeader_pch */
 
+#define propertyWithString(str) @property (nonatomic, strong) NSString * str;
+
 //----------------------ABOUT SCREEN & SIZE 屏幕&尺寸 ----------------------------
 /**
  iPad Air {{0, 0}, {768, 1024}}

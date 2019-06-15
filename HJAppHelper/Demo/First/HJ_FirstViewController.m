@@ -13,6 +13,7 @@
 #import "HJ_AddressBookViewController.h"
 #import "HJ_ValidateViewController.h"
 #import "HJ_GCDAnalysisViewController.h"
+#import "HJ_AssociatedObjectViewController.h"
 
 @interface HJ_FirstViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -30,6 +31,7 @@
                                                         @"通讯录读取",
                                                         @"正则验证",
                                                         @"GCD详解",
+                                                        @"关联对象详解",
                                                         nil];
     }
     return _mTitleArray;
@@ -116,6 +118,14 @@
             GCDAnalysisViewController.hidesBottomBarWhenPushed = YES;
             
             [self.navigationController pushViewController:GCDAnalysisViewController animated:YES];
+        }
+            break;
+            
+        case 5: {
+            
+            HJ_AssociatedObjectViewController * associatedObjectViewController = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([HJ_AssociatedObjectViewController class])];
+            associatedObjectViewController.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:associatedObjectViewController animated:YES];
         }
             break;
             

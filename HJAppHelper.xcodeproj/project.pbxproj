@@ -34,6 +34,9 @@
 		26C2F36A1CE0EBF500486989 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C2F3691CE0EBF500486989 /* NSDate+Utilities.m */; };
 		26C2F36D1CE0F71300486989 /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C2F36C1CE0F71300486989 /* NSDate+Helper.m */; };
 		32AD6F7F398252E0E6AF52BC /* libPods-HJAppHelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5131C19C64EB784DAB2839BB /* libPods-HJAppHelper.a */; };
+		A80EBF8E22B499B1007A1020 /* HJ_AssociatedObjectHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A80EBF8D22B499B1007A1020 /* HJ_AssociatedObjectHelper.m */; };
+		A80EBF9222B49B7E007A1020 /* HJ_AssociatedObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A80EBF9122B49B7E007A1020 /* HJ_AssociatedObjectViewController.m */; };
+		A80EBF9522B49CCC007A1020 /* NSObject+HJ_AssociatedObjcCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = A80EBF9422B49CCC007A1020 /* NSObject+HJ_AssociatedObjcCategory.m */; };
 		A81E09411E558C9100082D32 /* NSObject+RuntimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A81E09401E558C9100082D32 /* NSObject+RuntimeHelper.m */; };
 		A82571491F0231C1006CBEFA /* HJ_NetworkHelperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A82571451F0231C1006CBEFA /* HJ_NetworkHelperViewController.m */; };
 		A825714A1F0231C1006CBEFA /* HJ_KeyChainManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A82571481F0231C1006CBEFA /* HJ_KeyChainManagerViewController.m */; };
@@ -130,6 +133,12 @@
 		26C2F36B1CE0F71300486989 /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helper.h"; sourceTree = "<group>"; };
 		26C2F36C1CE0F71300486989 /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
 		5131C19C64EB784DAB2839BB /* libPods-HJAppHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HJAppHelper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80EBF8C22B499B1007A1020 /* HJ_AssociatedObjectHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJ_AssociatedObjectHelper.h; sourceTree = "<group>"; };
+		A80EBF8D22B499B1007A1020 /* HJ_AssociatedObjectHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJ_AssociatedObjectHelper.m; sourceTree = "<group>"; };
+		A80EBF9022B49B7E007A1020 /* HJ_AssociatedObjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJ_AssociatedObjectViewController.h; sourceTree = "<group>"; };
+		A80EBF9122B49B7E007A1020 /* HJ_AssociatedObjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJ_AssociatedObjectViewController.m; sourceTree = "<group>"; };
+		A80EBF9322B49CCC007A1020 /* NSObject+HJ_AssociatedObjcCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+HJ_AssociatedObjcCategory.h"; sourceTree = "<group>"; };
+		A80EBF9422B49CCC007A1020 /* NSObject+HJ_AssociatedObjcCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HJ_AssociatedObjcCategory.m"; sourceTree = "<group>"; };
 		A81E093F1E558C9100082D32 /* NSObject+RuntimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RuntimeHelper.h"; sourceTree = "<group>"; };
 		A81E09401E558C9100082D32 /* NSObject+RuntimeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RuntimeHelper.m"; sourceTree = "<group>"; };
 		A82571441F0231C1006CBEFA /* HJ_NetworkHelperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJ_NetworkHelperViewController.h; sourceTree = "<group>"; };
@@ -413,6 +422,7 @@
 				26A634451C97E3A400924952 /* 获取图片颜色 */,
 				26A634481C97E3A400924952 /* 通讯录 */,
 				A83CB01622A4AB85007E1D2B /* 水印 */,
+				A80EBF8A22B49945007A1020 /* 关联对象 */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -485,6 +495,26 @@
 				E1798CC2AD0C18B02025F4EF /* Pods-HJAppHelper.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A80EBF8A22B49945007A1020 /* 关联对象 */ = {
+			isa = PBXGroup;
+			children = (
+				A80EBF8C22B499B1007A1020 /* HJ_AssociatedObjectHelper.h */,
+				A80EBF8D22B499B1007A1020 /* HJ_AssociatedObjectHelper.m */,
+				A80EBF9322B49CCC007A1020 /* NSObject+HJ_AssociatedObjcCategory.h */,
+				A80EBF9422B49CCC007A1020 /* NSObject+HJ_AssociatedObjcCategory.m */,
+			);
+			path = "关联对象";
+			sourceTree = "<group>";
+		};
+		A80EBF8F22B49B68007A1020 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				A80EBF9022B49B7E007A1020 /* HJ_AssociatedObjectViewController.h */,
+				A80EBF9122B49B7E007A1020 /* HJ_AssociatedObjectViewController.m */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		A81E093E1E558C4200082D32 /* Runtime */ = {
@@ -682,6 +712,7 @@
 				A825714B1F023204006CBEFA /* 通讯录读取 */,
 				A82571521F024A30006CBEFA /* 正则验证 */,
 				A8ADE5BF207CA65B00C8B3AE /* GCD详解 */,
+				A80EBF8F22B49B68007A1020 /* New Group */,
 			);
 			path = First;
 			sourceTree = "<group>";
@@ -909,11 +940,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2637BF851D21FA2E004C0AA9 /* HJPlainFlowLayout.m in Sources */,
+				A80EBF9222B49B7E007A1020 /* HJ_AssociatedObjectViewController.m in Sources */,
 				A83CB01A22A4AC07007E1D2B /* HJ_WatermarkManager.m in Sources */,
 				26172F511BD7E99500D7A91F /* AppDelegate.m in Sources */,
 				26C2F36A1CE0EBF500486989 /* NSDate+Utilities.m in Sources */,
 				260812E71C9062090079ABC8 /* UINavigationBar+Addition.m in Sources */,
 				26A6344D1C97E3A400924952 /* HJDateTool.m in Sources */,
+				A80EBF8E22B499B1007A1020 /* HJ_AssociatedObjectHelper.m in Sources */,
 				26A634501C97E3A400924952 /* HJEncryptHelpers.m in Sources */,
 				A8C757C21DAA1201001BB31A /* HJFileManager.m in Sources */,
 				26172F4E1BD7E99500D7A91F /* main.m in Sources */,
@@ -933,6 +966,7 @@
 				A83B9D2F1EA74CF300D0DC31 /* HJ_KeyChainManager.m in Sources */,
 				26A6342B1C979AAF00924952 /* NSMutableArray+SafeArray.m in Sources */,
 				A8E0E49A1E9B8D2300F16E7C /* HJ_BaseViewController.m in Sources */,
+				A80EBF9522B49CCC007A1020 /* NSObject+HJ_AssociatedObjcCategory.m in Sources */,
 				26A6342F1C979B7400924952 /* NSObject+ResolveTimestamp.m in Sources */,
 				A81E09411E558C9100082D32 /* NSObject+RuntimeHelper.m in Sources */,
 				26C2F36D1CE0F71300486989 /* NSDate+Helper.m in Sources */,
